@@ -1,0 +1,471 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ecma-international.org/publications/standards/Ecma-006.htm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 19 Dec 2020 17:33:21 GMT
+      Server:
+      - Apache
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade
+      Last-Modified:
+      - Fri, 24 Jan 2020 08:38:32 GMT
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '16301'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n
+        \  \"http://www.w3.org/TR/html4/loose.dtd\">\r\n\r\n<HTML><!-- InstanceBegin
+        template=\"/Templates/StandardsTpl.dwt\" codeOutsideHTMLIsLocked=\"false\"
+        -->\r\n<HEAD>\r\n<!-- #BeginEditable \"doctitle\" -->\r\n<TITLE>Standard ECMA-6
+        </TITLE>\r\n<!-- #EndEditable -->\r\n<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html;
+        charset=iso-8859-1\">\r\n\r\n\t<script src=\"../../js/loadImg.js\" type=\"text/javascript\"></script>\r\n\t<link
+        rel=\"STYLESHEET\" type=\"text/css\" href=\"../../css/ecmasite.css\">\r\n\r\n\r\n\r\n
+        \   <style type=\"text/css\">\r\n<!--\r\n.style1 {color: #ff6600}\r\n-->\r\n
+        \   </style>\r\n</HEAD>\r\n\r\n<body bgcolor=\"#ffffff\" leftmargin=\"2\"
+        topmargin=\"0\" marginwidth=\"0\" marginheight=\"0\">\r\n<script type=\"text/javascript\">\r\n\r\n
+        \ var _gaq = _gaq || [];\r\n  _gaq.push(['_setAccount', 'UA-32577963-1']);\r\n
+        \ _gaq.push(['_trackPageview']);\r\n\r\n  (function() {\r\n    var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;\r\n    ga.src = ('https:' ==
+        document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\r\n
+        \   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\r\n  })();\r\n\r\n</script>\r\n\r\n<TABLE BORDER=\"0\" CELLPADDING=\"0\"
+        CELLSPACING=\"0\" >\r\n\t<TR><!-- Ecma Logo -->\r\n\t\t\r\n    <TD WIDTH=149
+        HEIGHT=62 ><a href=\"../../default.htm\" target=\"_self\"><img src=\"../../images/logo_top.gif\"
+        alt=\"Ecma International Home\" width=149 height=62 border=\"0\"></a></TD>\r\n
+        \   <!-- Ecma Page Title -->\r\n\t\t<td width=\"613\" height=\"62\" background=\"../../images/top_bar.gif\"
+        >\r\n\r\n\t\t<!--  CONTACT Ecma -->\r\n\t\t<table BORDER=0 CELLPADDING=0 CELLSPACING=0
+        align=\"left\" valign=\"bottom\" width=\"613\" height=\"62\">  \r\n\t\t<tr>\r\n\t\t\t\r\n
+        \         <td width=\"292\" class=\"titrespace\"><img src=\"../../images/Lxmenu_spacer.gif\"
+        width=\"292\" height=\"30\" alt=\"\" border=\"0\"> \r\n            &nbsp;&nbsp;Standards<br>\r\n\t\t\t<img
+        src=\"../../images/Lxmenu_spacer.gif\" width=\"149\" height=\"10\" alt=\"\"
+        border=\"0\"></td>\r\n\t\t\t\r\n          <td  width=\"321\" align=\"right\"
+        valign=\"bottom\"> <a href=\"../../contact/contact.html\" target=\"_blank\"><IMG
+        SRC=\"../../images/contactEcma1.gif\" alt=\"contact us\" border=\"0\"></a>\t\r\n
+        \         </td>\r\n\t\t\r\n\t\t</tr>\r\n\t\t</table>\r\n\r\n\t\t</td>\r\n\t</TR>\r\n\t\r\n\t<TR>\r\n\t\t<TD
+        \ background=\"../../images/sitemap-bkgrd.gif\" WIDTH=149 HEIGHT=40>\r\n\t\t<A
+        href=\"../../sitemap/ecma_sitemap.html\" onmouseout=\"changeImages('_1_1',
+        '../../images/siteMap.gif'); return true;\" onmouseover=\"changeImages('_1_1',
+        '../../images/siteMap_over.gif'); return true;\">\r\n\t<IMG src=\"../../images/siteMap.gif\"
+        alt=\"Ecma Site Map\" name=_1_1 width=75 height=36 border=0></A>\r\n\t\r\n\t</TD>\r\n\t\t<!--
+        Dhtml menu background -->\r\n\t\t<TD background=\"../../images/menu_bar.gif\"
+        height=40 width=610 valign=\"top\">\r\n\t\t\t<table width=\"610\" border=\"0\"
+        cellspacing=\"1\" cellpadding=\"0\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t<td width=152
+        valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n<td width=152
+        valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button
+        class=\"dropbtnWhatIsEcma\"></button>\r\n\r\n  \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/history.htm\">History</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/org.htm\">Structure</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/members.htm\">Membership</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/memento/join.htm\">Join</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/memento/Ecma_awards.htm\">Awards</a>\r\n\r\n
+        \ \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td width=152 valign=\"top\"
+        align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button class=\"dropbtnActivities\"></button>\r\n\r\n
+        \ \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html\">General</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html#lang\">Language</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html#med\">Media</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/activities/index.html#envir\">Environmental</a>\r\n\r\n
+        \ \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td width=152 valign=\"top\"
+        align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button class=\"dropbtnNews\"></button>\r\n\r\n
+        \ \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/index.html\">Latest
+        News</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/index1.html\">Previous
+        News</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/Recent%20PR.html\">Press
+        Releases</a>\r\n\r\n  \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td
+        width=152 valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n\r\n
+        \ \t\t\t\t<button class=\"dropbtnStandards\"></button>\r\n\r\n  \t\t\t\t<div
+        class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/publications/standards/Standard.htm\">Standards</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/publications/techreports/techrep.htm\">Technical
+        Reports</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/publications/memento_index.htm\">Ecma
+        Mementos</a>\r\n  \t\t\t\t</div>\r\n\t\t\t\t</div></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\t\t</TD>\r\n\t</TR>\r\n\t\t\t\r\n\t\r\n\t<TR><!--
+        Left Horizontal Menu -->\r\n\t\t<TD background=\"../../images/leftmenu-bar1.gif\"
+        WIDTH=\"149\" HEIGHT=\"430\" valign=\"top\">\r\n\t\t\t<table WIDTH=\"149\"
+        BORDER=\"0\" CELLPADDING=\"0\" CELLSPACING=\"0\">\r\n\t\t\t\t\t<tr><td  valign=top><IMG
+        alt=\"\" border=0 height=\"37\" src=\"../../images/Lxmenu_spacer.gif\" width=\"146\"></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n
+        \         <td class=\"menu\"  valign=\"top\" align=\"center\"  HEIGHT=360>
+        \r\n\t\t  <table width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        width=18 valign=\"top\">&nbsp;\r\n\t\t\t\t\t\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t\r\n
+        \               <td align=\"left\" width=\"128\" valign=\"middle\"> <a href=\"/publications/standards/Stnindex.htm\"
+        >Standards \r\n                  Index </A> </td>\r\n\t\t\t  </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/standards/Standard.htm\"
+        >Standards \r\n                  List </A> </td>\r\n              </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t
+        \ <td>&nbsp;</td>\r\n\t\t\t\t\t  <td width=\"128\" align=\"center\" valign=\"middle\"><a
+        href=\"/publications/standards/Standardwithdrawn.htm\">Withdrawn Standards</A>
+        </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t
+        \ <table width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t
+        \   <tr><td colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\"
+        width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=16>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td width=\"128\" align=\"left\"
+        valign=\"middle\"> <a href=\"/publications/techreports/TRindex.htm\">Tech.
+        \r\n                  Reports Index</A> </td>\r\n              </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr>\r\n
+        \               <td colspan=\"2\"> <img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">                </td>\r\n              </tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t
+        \ <td>&nbsp;</td>\r\n\t\t\t\t\t  <td width=\"128\" align=\"left\" valign=\"middle\"><a
+        href=\"/publications/techreports/techrep.htm\" >Tech. \r\n                  Reports
+        List</A> </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/techreports/TRwithdrawn.htm\">Withdrawn
+        Tech. Reports</A> </td>\r\n\t\t\t  </tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/memento_index.htm\">Mementos</a></td>\r\n
+        \             </tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\t\t
+        \ \r\n\t\t  \r\n\t\t  </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\r\n\t\t\r\n\t\t<br><br>\r\n\t\t\r\n\t\t\r\n\t\t</TD>\r\n\t
+        \ <TD width=\"600\" valign = top><!-- Page body here --><br>\r\n\t\t\t\t\r\n\t\t\t\t<table
+        width=\"600\" BORDER=0 CELLPADDING=0 CELLSPACING=0>\r\n\t\t\t\t\t<tr>\r\n\r\n\t\t\t\t\t<td
+        \ valign=top width=\"12\">&nbsp; </td>\r\n\t\t\t\t\t\r\n          <td  valign=top>
+        <div align=\"right\">\r\n              <p><a href=\"javascript:PrintThisPage();\"
+        >Printer Friendly Version</a></p>\r\n              <p><img src=\"../../images/BackButton.gif\"
+        width=\"14\" height=\"13\" alt=\"Back\"><a href = \"javascript:history.back()\">
+        \r\n                Back</a></p>\r\n            </div>\r\n            <div
+        id=contentstart><!-- InstanceBeginEditable name=\"ecmaContent\" --> \r\n              <p><span
+        class=\"STidentifier\">Standard ECMA-6</span><br>\r\n                <span
+        class=\"STsubtitle\"> 7-bit Coded Character Set</span><br>\r\n                <br>\r\n
+        \               <span class=\"STedition\"> 6<sup>th</sup> edition (December
+        1991)</span></p>\r\n              <img src=\"../../images/ST-Line.gif\" width=\"592\"
+        height=\"2\"> \r\n              <p class=\"STdescription\">This Ecma Standard
+        specifies a set of 128 \r\n                characters, (control characters
+        and graphic characters such as \r\n                letters, digits and symbols)
+        with their coded representation. \r\n                Most of these characters
+        are mandatory and unchangeable, but provision \r\n                is made
+        for some flexibility to accommodate national and other \r\n                requirements.</p>\r\n
+        \             <p class=\"STdescription\">This Ecma Standard specifies a 7-bit
+        coded \r\n                character set with a number of options. It also
+        provides guidance \r\n                on how to exercise the options to define
+        specific national versions \r\n                and application-oriented versions.
+        Furthermore it specifies the \r\n                International Reference Version
+        (IRV) in which such options have \r\n                been exercised.</p>\r\n
+        \             <p class=\"STdescription\">This character set is primarily intended
+        \r\n                for the interchange of information among data processing
+        systems \r\n                and associated equipment, and within data communication
+        systems. \r\n                The need for graphic characters and control functions
+        in data \r\n                processing has also been taken into account in
+        determining this \r\n                character set.</p>\r\n              <p
+        class=\"STdescription\">This character set is applicable to alphabets \r\n
+        \               of the Latin script.</p>\r\n              <p class=\"STdescription\">This
+        character set allows the use of control \r\n                characters for
+        code extension where its character set is insufficient \r\n                for
+        particular applications. Procedures for the use of these control \r\n                characters
+        are specified in Standard <a href=\"ECMA-035.HTM\">ECMA-35</a>. \r\n              <p
+        class=\"STdescription\">The definitions of the control characters \r\n                mentioned
+        in this Ecma Standard are specified in Standard <a href=\"ECMA-048.HTM\">ECMA-48</a>.
+        \r\n                It is assumed that data associated with them are to be
+        processed \r\n                serially in a forward direction. When they are
+        included in strings \r\n                of data which are processed other
+        than serially in a forward direction \r\n                or when they are
+        included in data formatted for fixed-record processing \r\n                they
+        may have undesirable effects or may require additional special \r\n                treatment
+        to ensure that they result in their desired function.</p>\r\n              <img
+        src=\"../../images/ST-Line.gif\" width=\"592\" height=\"2\"> \r\n              <p
+        class=\"STbody\">The following file can be freely downloaded:</p>\r\n              <table
+        border=\"2\">\r\n                <tr class=\"STbody\"> \r\n                  <td>File
+        name</td>\r\n                  <td>Size (Bytes)</td>\r\n                  <td>Content</td>\r\n
+        \               </tr>\r\n                <tr class=\"STbody\"> \r\n                  <td><a
+        href=\"http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-006.pdf\"
+        onClick=\"javascript: _gaq.push(['_trackPageview', '/downloads/ST-6']);\">ECMA-6.pdf</a></td>\r\n
+        \                 <td>294 933&nbsp;&nbsp;&nbsp; </td>\r\n                  <td>Acrobat
+        (r) PDF file</td>\r\n                </tr>\r\n              </table>\r\n              <p>
+        \             This Ecma publication is also approved as ISO/IEC 646.</p>\r\n
+        \             <p>The previous replaced &quot;historical&quot; editions of
+        this Standard are available <a href=\"Ecma-006-arch.htm\">here</a>. </p>\r\n
+        \             <p><br>\r\n              </p>\r\n            <!-- InstanceEndEditable
+        --> \r\n              <p align=\"right\"><img src=\"../../images/BackButton.gif\"
+        width=\"14\" height=\"13\" alt=\"Back\"><a href = \"javascript:history.back()\">
+        \r\n                Back</a></p>\r\n            </div>\r\n\t\t\t\t</td></tr>\r\n\t\t</table>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t<table
+        width=\"600\" border=\"0\">\r\n                  <tr>\r\n                    <td>&nbsp;</td>\r\n
+        \                   <td><p>&nbsp;</p>\r\n                        <p>&nbsp;</p>\r\n
+        \                       <p>&nbsp;</p></td>\r\n                    <td>&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        width=\"155\">&nbsp;</td>\r\n                    <td width=\"311\"><!-- Search
+        Google -->\r\n                        <form method=\"get\" action=\"http://www.google.com/search\"
+        target=\"_blank\">\r\n                          <div class=\"style1\" style=\"border:1px
+        solid #ff6600;padding:4px;width:20em;\">\r\n                            <table
+        border=\"0\" cellpadding=\"0\">\r\n                              <tr>\r\n
+        \                               <td><input type=\"text\"   name=\"q\" size=\"25\"\r\n
+        maxlength=\"255\" value=\"\" />\r\n                                    <input
+        type=\"submit\" value=\"Google Search\" /></td>\r\n                              </tr>\r\n
+        \                             <tr>\r\n                                <td
+        align=\"center\" style=\"font-size:75%\"><input type=\"checkbox\"  name=\"sitesearch\"\r\n
+        value=\"www.ecma-international.org\" checked />\r\n                only search
+        Ecma International<br />\r\n                                </td>\r\n                              </tr>\r\n
+        \                           </table>\r\n                          </div>\r\n
+        \                       </form>\r\n                        \r\n            <!--
+        Search Google -->\r\n            <p align=\"center\"><a href=\"https://www.w3.org/WAI/WCAG1A-Conformance\"\r\n\r\n
+        \     title=\"Explanation of Level A Conformance\"><img \r\n\r\n          src=\"https://www.w3.org/WAI/wcag1A\"\r\n\r\n
+        \         alt=\"Level A conformance icon, \r\n\r\n          W3C-WAI Web Content
+        Accessibility Guidelines 1.0\" width=\"88\" height=\"32\"></a> \r\n\r\n            </p></td>\r\n
+        \                   <td width=\"112\">&nbsp;</td>\r\n                  </tr>\r\n
+        \               </table>\r\n\t\t\t\t<p>&nbsp;</p></td></tr>\r\n</table>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t
+        \r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\r\n\r\n</body>\r\n<!-- InstanceEnd --></HTML>"
+  recorded_at: Sat, 19 Dec 2020 17:33:21 GMT
+- request:
+    method: get
+    uri: https://www.ecma-international.org/publications/standards/Ecma-006-arch.htm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 19 Dec 2020 17:33:22 GMT
+      Server:
+      - Apache
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade
+      Last-Modified:
+      - Fri, 24 Jan 2020 08:38:32 GMT
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '14749'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n
+        \  \"http://www.w3.org/TR/html4/loose.dtd\">\r\n\r\n<HTML><!-- InstanceBegin
+        template=\"/Templates/StandardsTpl.dwt\" codeOutsideHTMLIsLocked=\"false\"
+        -->\r\n<HEAD>\r\n<!-- #BeginEditable \"doctitle\" -->\r\n<TITLE>Standard ECMA-6-archive</TITLE>\r\n<style
+        type=\"text/css\">\r\n<!--\r\n.style2 {font-size: 0.95em}\r\n-->\r\n</style>\r\n<style
+        type=\"text/css\">\r\n<!--\r\n.style3 {font-size: 1.22em}\r\n-->\r\n</style>\r\n<!--
+        #EndEditable -->\r\n<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html;
+        charset=iso-8859-1\">\r\n\r\n\t<script src=\"../../js/loadImg.js\" type=\"text/javascript\"></script>\r\n\t<link
+        rel=\"STYLESHEET\" type=\"text/css\" href=\"../../css/ecmasite.css\">\r\n\r\n\r\n\r\n
+        \   <style type=\"text/css\">\r\n<!--\r\n.style1 {color: #ff6600}\r\n-->\r\n
+        \   </style>\r\n</HEAD>\r\n\r\n<body bgcolor=\"#ffffff\" leftmargin=\"2\"
+        topmargin=\"0\" marginwidth=\"0\" marginheight=\"0\">\r\n<script type=\"text/javascript\">\r\n\r\n
+        \ var _gaq = _gaq || [];\r\n  _gaq.push(['_setAccount', 'UA-32577963-1']);\r\n
+        \ _gaq.push(['_trackPageview']);\r\n\r\n  (function() {\r\n    var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;\r\n    ga.src = ('https:' ==
+        document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\r\n
+        \   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\r\n  })();\r\n\r\n</script>\r\n\r\n<TABLE BORDER=\"0\" CELLPADDING=\"0\"
+        CELLSPACING=\"0\" >\r\n\t<TR><!-- Ecma Logo -->\r\n\t\t\r\n    <TD WIDTH=149
+        HEIGHT=62 ><a href=\"../../default.htm\" target=\"_self\"><img src=\"../../images/logo_top.gif\"
+        alt=\"Ecma International Home\" width=149 height=62 border=\"0\"></a></TD>\r\n
+        \   <!-- Ecma Page Title -->\r\n\t\t<td width=\"613\" height=\"62\" background=\"../../images/top_bar.gif\"
+        >\r\n\r\n\t\t<!--  CONTACT Ecma -->\r\n\t\t<table BORDER=0 CELLPADDING=0 CELLSPACING=0
+        align=\"left\" valign=\"bottom\" width=\"613\" height=\"62\">  \r\n\t\t<tr>\r\n\t\t\t\r\n
+        \         <td width=\"292\" class=\"titrespace\"><img src=\"../../images/Lxmenu_spacer.gif\"
+        width=\"292\" height=\"30\" alt=\"\" border=\"0\"> \r\n            &nbsp;&nbsp;Standards<br>\r\n\t\t\t<img
+        src=\"../../images/Lxmenu_spacer.gif\" width=\"149\" height=\"10\" alt=\"\"
+        border=\"0\"></td>\r\n\t\t\t\r\n          <td  width=\"321\" align=\"right\"
+        valign=\"bottom\"> <a href=\"../../contact/contact.html\" target=\"_blank\"><IMG
+        SRC=\"../../images/contactEcma1.gif\" alt=\"contact us\" border=\"0\"></a>\t\r\n
+        \         </td>\r\n\t\t\r\n\t\t</tr>\r\n\t\t</table>\r\n\r\n\t\t</td>\r\n\t</TR>\r\n\t\r\n\t<TR>\r\n\t\t<TD
+        \ background=\"../../images/sitemap-bkgrd.gif\" WIDTH=149 HEIGHT=40>\r\n\t\t<A
+        href=\"../../sitemap/ecma_sitemap.html\" onmouseout=\"changeImages('_1_1',
+        '../../images/siteMap.gif'); return true;\" onmouseover=\"changeImages('_1_1',
+        '../../images/siteMap_over.gif'); return true;\">\r\n\t<IMG src=\"../../images/siteMap.gif\"
+        alt=\"Ecma Site Map\" name=_1_1 width=75 height=36 border=0></A>\r\n\t\r\n\t</TD>\r\n\t\t<!--
+        Dhtml menu background -->\r\n\t\t<TD background=\"../../images/menu_bar.gif\"
+        height=40 width=610 valign=\"top\">\r\n\t\t\t<table width=\"610\" border=\"0\"
+        cellspacing=\"1\" cellpadding=\"0\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t<td width=152
+        valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n<td width=152
+        valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button
+        class=\"dropbtnWhatIsEcma\"></button>\r\n\r\n  \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/history.htm\">History</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/org.htm\">Structure</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/memento/members.htm\">Membership</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/memento/join.htm\">Join</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/memento/Ecma_awards.htm\">Awards</a>\r\n\r\n
+        \ \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td width=152 valign=\"top\"
+        align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button class=\"dropbtnActivities\"></button>\r\n\r\n
+        \ \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html\">General</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html#lang\">Language</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/activities/index.html#med\">Media</a>\r\n\r\n\t\t\t\t<a
+        href=\"https://www.ecma-international.org/activities/index.html#envir\">Environmental</a>\r\n\r\n
+        \ \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td width=152 valign=\"top\"
+        align=\"center\"><div class=\"dropdown\">\r\n\r\n  \t\t\t\t<button class=\"dropbtnNews\"></button>\r\n\r\n
+        \ \t\t\t\t<div class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/index.html\">Latest
+        News</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/index1.html\">Previous
+        News</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/news/Recent%20PR.html\">Press
+        Releases</a>\r\n\r\n  \t\t\t\t</div>\r\n\r\n\t\t\t\t</div></td>\r\n\r\n\t\t\t\t<td
+        width=152 valign=\"top\" align=\"center\"><div class=\"dropdown\">\r\n\r\n
+        \ \t\t\t\t<button class=\"dropbtnStandards\"></button>\r\n\r\n  \t\t\t\t<div
+        class=\"dropdown-content\">\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/publications/standards/Standard.htm\">Standards</a>\r\n\r\n
+        \   \t\t\t\t<a href=\"https://www.ecma-international.org/publications/techreports/techrep.htm\">Technical
+        Reports</a>\r\n\r\n    \t\t\t\t<a href=\"https://www.ecma-international.org/publications/memento_index.htm\">Ecma
+        Mementos</a>\r\n  \t\t\t\t</div>\r\n\t\t\t\t</div></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\t\t</TD>\r\n\t</TR>\r\n\t\t\t\r\n\t\r\n\t<TR><!--
+        Left Horizontal Menu -->\r\n\t\t<TD background=\"../../images/leftmenu-bar1.gif\"
+        WIDTH=\"149\" HEIGHT=\"430\" valign=\"top\">\r\n\t\t\t<table WIDTH=\"149\"
+        BORDER=\"0\" CELLPADDING=\"0\" CELLSPACING=\"0\">\r\n\t\t\t\t\t<tr><td  valign=top><IMG
+        alt=\"\" border=0 height=\"37\" src=\"../../images/Lxmenu_spacer.gif\" width=\"146\"></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n
+        \         <td class=\"menu\"  valign=\"top\" align=\"center\"  HEIGHT=360>
+        \r\n\t\t  <table width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        width=18 valign=\"top\">&nbsp;\r\n\t\t\t\t\t\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t\r\n
+        \               <td align=\"left\" width=\"128\" valign=\"middle\"> <a href=\"/publications/standards/Stnindex.htm\"
+        >Standards \r\n                  Index </A> </td>\r\n\t\t\t  </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/standards/Standard.htm\"
+        >Standards \r\n                  List </A> </td>\r\n              </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t
+        \ <td>&nbsp;</td>\r\n\t\t\t\t\t  <td width=\"128\" align=\"center\" valign=\"middle\"><a
+        href=\"/publications/standards/Standardwithdrawn.htm\">Withdrawn Standards</A>
+        </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t
+        \ <table width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t
+        \   <tr><td colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\"
+        width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=16>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td width=\"128\" align=\"left\"
+        valign=\"middle\"> <a href=\"/publications/techreports/TRindex.htm\">Tech.
+        \r\n                  Reports Index</A> </td>\r\n              </tr>\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr>\r\n
+        \               <td colspan=\"2\"> <img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">                </td>\r\n              </tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t
+        \ <td>&nbsp;</td>\r\n\t\t\t\t\t  <td width=\"128\" align=\"left\" valign=\"middle\"><a
+        href=\"/publications/techreports/techrep.htm\" >Tech. \r\n                  Reports
+        List</A> </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/techreports/TRwithdrawn.htm\">Withdrawn
+        Tech. Reports</A> </td>\r\n\t\t\t  </tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t</table>\r\n\r\n\t\t\t\t\t<table
+        width=95% border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t<tr><td
+        colspan=\"2\">\r\n\t\t\t\t\t<img src=\"../../images/H-dash.gif\" width=\"146\"
+        height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t<tr><td
+        width=18>&nbsp; </td>\r\n\t\t\t\t\t\r\n                <td align=\"left\"
+        width=\"128\" valign=\"middle\"> <a href=\"/publications/memento_index.htm\">Mementos</a></td>\r\n
+        \             </tr>\r\n\t\t\t\t\t<tr><td colspan=\"2\">\r\n\t\t\t\t\t<img
+        src=\"../../images/H-dash.gif\" width=\"146\" height=\"3\" alt=\"\" border=\"0\">\r\n\t\t\t\t\t</td></tr>\r\n\t\t\t\t\t</table>\r\n\t\t
+        \ \r\n\t\t  \r\n\t\t  </td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\r\n\t\t\r\n\t\t<br><br>\r\n\t\t\r\n\t\t\r\n\t\t</TD>\r\n\t
+        \ <TD width=\"600\" valign = top><!-- Page body here --><br>\r\n\t\t\t\t\r\n\t\t\t\t<table
+        width=\"600\" BORDER=0 CELLPADDING=0 CELLSPACING=0>\r\n\t\t\t\t\t<tr>\r\n\r\n\t\t\t\t\t<td
+        \ valign=top width=\"12\">&nbsp; </td>\r\n\t\t\t\t\t\r\n          <td  valign=top>
+        <div align=\"right\">\r\n              <p><a href=\"javascript:PrintThisPage();\"
+        >Printer Friendly Version</a></p>\r\n              <p><img src=\"../../images/BackButton.gif\"
+        width=\"14\" height=\"13\" alt=\"Back\"><a href = \"javascript:history.back()\">
+        \r\n                Back</a></p>\r\n            </div>\r\n            <div
+        id=contentstart><!-- InstanceBeginEditable name=\"ecmaContent\" --> \r\n              <p><span
+        class=\"STidentifier\">Standard ECMA-6</span><br>\r\n                <span
+        class=\"STsubtitle\"> 7-bit Coded Character Set</span><br>\r\n                <br>\r\n
+        \               <span class=\"STedition\"> 6<sup>th</sup> edition (December
+        1991)</span></p>\r\n              <img src=\"../../images/ST-Line.gif\" width=\"592\"
+        height=\"2\"> \r\n              <p class=\"STdescription\">The latest edition
+        of this Ecma Standard is available <a href=\"Ecma-006.htm\">here</a>.</p>\r\n
+        \             <p class=\"STdescription\"><img src=\"../../images/ST-Line.gif\"
+        width=\"592\" height=\"2\">              </p>\r\n              <p class=\"STbody\">You
+        can download the previous replaced &quot;historical&quot; editions of this
+        Ecma Standard, free of charge:</p>\r\n              <table border=\"2\">\r\n
+        \               <tr class=\"STbody\"> \r\n                  <td>File name</td>\r\n
+        \                 <td>Content</td>\r\n                </tr>\r\n                <tr
+        class=\"STbody\">\r\n                  <td><span class=\"style1 style2 style3\"><strong>ECMA-6
+        1st edition</strong></span></td>\r\n                  <td>NOT AVAILABLE</td>\r\n
+        \               </tr>\r\n                <tr class=\"STbody\">\r\n                  <td><span
+        class=\"style1 style2 style3\"><strong>ECMA-6 2nd edition</strong></span></td>\r\n
+        \                 <td>NOT AVAILABLE</td>\r\n                </tr>\r\n                <tr
+        class=\"STbody\">\r\n                  <td><span class=\"style1 style2 style3\"><strong>ECMA-6
+        3rd edition</strong></span></td>\r\n                  <td>NOT AVAILABLE</td>\r\n
+        \               </tr>\r\n                <tr class=\"STbody\">\r\n                  <td><a
+        href=\"../files/ECMA-ST-WITHDRAWN/ECMA-6, 4th Edition, August 1973.pdf\" onClick=\"javascript:
+        _gaq.push(['_trackPageview', '/downloads/ST-6 4th edition']);\">ECMA-6 4th
+        edition</a> </td>\r\n                  <td>Acrobat (r) PDF file</td>\r\n                </tr>\r\n
+        \               <tr class=\"STbody\">\r\n                  <td><a href=\"../files/ECMA-ST-WITHDRAWN/ECMA-6,
+        5th Edition, March 1985.pdf\" onClick=\"javascript: _gaq.push(['_trackPageview',
+        '/downloads/ST-6 5th edition']);\">ECMA-6 5th edition</a> </td>\r\n                  <td>Acrobat
+        (r) PDF file</td>\r\n                </tr>\r\n              </table>\r\n              <br>\r\n
+        \             <!-- InstanceEndEditable --> \r\n              <p align=\"right\"><img
+        src=\"../../images/BackButton.gif\" width=\"14\" height=\"13\" alt=\"Back\"><a
+        href = \"javascript:history.back()\"> \r\n                Back</a></p>\r\n
+        \           </div>\r\n\t\t\t\t</td></tr>\r\n\t\t</table>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t<table
+        width=\"600\" border=\"0\">\r\n                  <tr>\r\n                    <td>&nbsp;</td>\r\n
+        \                   <td><p>&nbsp;</p>\r\n                        <p>&nbsp;</p>\r\n
+        \                       <p>&nbsp;</p></td>\r\n                    <td>&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        width=\"155\">&nbsp;</td>\r\n                    <td width=\"311\"><!-- Search
+        Google -->\r\n                        <form method=\"get\" action=\"http://www.google.com/search\"
+        target=\"_blank\">\r\n                          <div class=\"style1\" style=\"border:1px
+        solid #ff6600;padding:4px;width:20em;\">\r\n                            <table
+        border=\"0\" cellpadding=\"0\">\r\n                              <tr>\r\n
+        \                               <td><input type=\"text\"   name=\"q\" size=\"25\"\r\n
+        maxlength=\"255\" value=\"\" />\r\n                                    <input
+        type=\"submit\" value=\"Google Search\" /></td>\r\n                              </tr>\r\n
+        \                             <tr>\r\n                                <td
+        align=\"center\" style=\"font-size:75%\"><input type=\"checkbox\"  name=\"sitesearch\"\r\n
+        value=\"www.ecma-international.org\" checked />\r\n                only search
+        Ecma International<br />\r\n                                </td>\r\n                              </tr>\r\n
+        \                           </table>\r\n                          </div>\r\n
+        \                       </form>\r\n                        \r\n            <!--
+        Search Google -->\r\n            <p align=\"center\"><a href=\"https://www.w3.org/WAI/WCAG1A-Conformance\"\r\n\r\n
+        \     title=\"Explanation of Level A Conformance\"><img \r\n\r\n          src=\"https://www.w3.org/WAI/wcag1A\"\r\n\r\n
+        \         alt=\"Level A conformance icon, \r\n\r\n          W3C-WAI Web Content
+        Accessibility Guidelines 1.0\" width=\"88\" height=\"32\"></a> \r\n\r\n            </p></td>\r\n
+        \                   <td width=\"112\">&nbsp;</td>\r\n                  </tr>\r\n
+        \               </table>\r\n\t\t\t\t<p>&nbsp;</p></td></tr>\r\n</table>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t
+        \r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\r\n\r\n</body>\r\n<!-- InstanceEnd --></HTML>"
+  recorded_at: Sat, 19 Dec 2020 17:33:22 GMT
+recorded_with: VCR 6.0.0
