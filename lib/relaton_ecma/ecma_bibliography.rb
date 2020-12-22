@@ -17,7 +17,12 @@ module RelatonEcma
       def get(code, _year = nil, _opts = {})
         warn "[relaton-ecma] (\"#{code}\") fetching..."
         result = search code
-        warn "[relaton-ecma] (\"#{code}\") found #{result.docidentifier.first.id}"
+        if result
+          warn "[relaton-ecma] (\"#{code}\") found #{result.docidentifier.first.id}"
+        else
+          warn "[relaton-ecma] WARNING no match found online for #{code}. "\
+          "The code must be exactly like it is on the standards website."
+        end
         result
       end
     end

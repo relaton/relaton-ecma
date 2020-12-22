@@ -5,12 +5,14 @@ module RelatonEcma
     class << self
       # @param code [String]
       # @return [RelatonBib::BibliographicItem]
-      def scrape_page(code)
+      def scrape_page(code) # rubocop:disable Metrics/AbcSize
         num = /\d+$/.match(code).to_s.rjust 3, "0"
         url = ENDPOINT + code.capitalize.sub(/\d+$/, num) + ".htm"
         doc = Nokogiri::HTML OpenURI.open_uri url
         parse_page doc, code, url
       rescue OpenURI::HTTPError => e
+        return if e.io.status.first == "404"
+
         raise RelatonBib::RequestError, "No document found for #{code} reference. #{e.message}"
       end
 
