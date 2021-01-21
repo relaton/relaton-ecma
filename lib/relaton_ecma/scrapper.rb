@@ -42,7 +42,7 @@ module RelatonEcma
       # @return [Array<RelatonBib::TypedUri>]
       def fetch_link(doc, url)
         link = [RelatonBib::TypedUri.new(type: "src", content: url)]
-        ref = doc.at('//tr[@class="STbody"]/td/a')
+        ref = doc.at('//div[@class="ecma-item-content-wrapper"]/span/a')
         link << RelatonBib::TypedUri.new(type: "doi", content: ref[:href]) if ref
         link
       end
@@ -50,7 +50,7 @@ module RelatonEcma
       # @param doc [Nokogiri::HTML::Document]
       # @return [Array<Hash>]
       def fetch_title(doc)
-        doc.xpath('//span[@class="STsubtitle"]').map do |t|
+        doc.xpath('//p[@class="ecma-item-short-description"]').map do |t|
           { content: t.text.strip, language: "en", script: "Latn" }
         end
       end
@@ -58,7 +58,7 @@ module RelatonEcma
       # @param doc [Nokogiri::HTML::Document]
       # @return [Array<RelatonBib::FormattedString>]
       def fetch_abstract(doc)
-        a = doc.xpath('//p[@class="STdescription"]').map do |a|
+        a = doc.xpath('//div[@class="ecma-item-content"]/p').map do |a|
           a.text.strip.squeeze(" ").gsub /\r\n/, ""
         end.join "\n"
         return [] if a.empty?
@@ -69,8 +69,8 @@ module RelatonEcma
       # @param doc [Nokogiri::HTML::Document]
       # @return [Array<RelatonBib::BibliographicDate>]
       def fetch_date(doc)
-        doc.xpath('//span[@class="STedition"]').map do |d|
-          date = d.text.match(/(?<=\()\w+\s\d{4}(?=\))/).to_s
+        doc.xpath('//p[@class="ecma-item-edition"]').map do |d|
+          date = d.text.split(", ").last
           RelatonBib::BibliographicDate.new type: "published", on: date
         end
       end
@@ -78,19 +78,19 @@ module RelatonEcma
       # @param doc [Nokogiri::HTML::Document]
       # @return [String]
       def fetch_edition(doc)
-        doc.at('//span[@class="STedition"]')&.text&.strip&.match(/^\d+(?=th)/)&.to_s
+        doc.at('//p[@class="ecma-item-edition"]')&.text&.match(/^\d+(?=th)/)&.to_s
       end
 
       # @param doc [Nokogiri::HTML::Document]
       # @return [Array<Hash>]
-      def fetch_relation(doc)
-        history = doc.at "//p[contains(., 'historical')]/a"
-        return [] unless history
-
-        rel_doc = Nokogiri::HTML OpenURI.open_uri(ENDPOINT + history[:href])
-        rel_doc.xpath("//tr[@class='STbody']/td[1]/*").map do |rel|
-          fref = RelatonBib::FormattedRef.new content: rel.text, language: "en", script: "Latn"
-          bibitem = RelatonBib::BibliographicItem.new formattedref: fref
+      def fetch_relation(doc) # rubocop:disable Metrics/AbcSize
+        doc.xpath("//ul[@class='ecma-item-archives']/li").map do |rel|
+          ref, ed, on = rel.at("span").text.split ", "
+          fref = RelatonBib::FormattedRef.new content: ref, language: "en", script: "Latn"
+          date = []
+          date << RelatonBib::BibliographicDate.new(type: "published", on: on) if on
+          link = rel.xpath("span/a").map { |l| RelatonBib::TypedUri.new type: "doi", content: l[:href] }
+          bibitem = RelatonBib::BibliographicItem.new formattedref: fref, edition: ed.match(/^\d+/).to_s, link: link
           { type: "updates", bibitem: bibitem }
         end
       end

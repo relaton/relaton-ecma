@@ -1,7 +1,7 @@
 <bibdata type="standard">
-  <title format="text/plain" language="en" script="Latn">7-bit Coded Character Set</title>
+  <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://www.ecma-international.org/publications/standards/Ecma-006.htm</uri>
-  <uri type="doi">http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-006.pdf</uri>
+  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6-6th-Edition-December-1991.pdf</uri>
   <docidentifier type="ECMA">ECMA-6</docidentifier>
   <date type="published">
     <on>1991-12</on>
@@ -9,35 +9,42 @@
   <edition>6</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This Ecma Standard specifies a set of 128  characters, (control characters and graphic characters such as  letters, digits and symbols) with their coded representation.  Most of these characters are mandatory and unchangeable, but provision  is made for some flexibility to accommodate national and other  requirements.
-This Ecma Standard specifies a 7-bit coded  character set with a number of options. It also provides guidance  on how to exercise the options to define specific national versions  and application-oriented versions. Furthermore it specifies the  International Reference Version (IRV) in which such options have  been exercised.
-This character set is primarily intended  for the interchange of information among data processing systems  and associated equipment, and within data communication systems.  The need for graphic characters and control functions in data  processing has also been taken into account in determining this  character set.
-This character set is applicable to alphabets  of the Latin script.
-This character set allows the use of control  characters for code extension where its character set is insufficient  for particular applications. Procedures for the use of these control  characters are specified in Standard ECMA-35.
-The definitions of the control characters  mentioned in this Ecma Standard are specified in Standard ECMA-48.  It is assumed that data associated with them are to be processed  serially in a forward direction. When they are included in strings  of data which are processed other than serially in a forward direction  or when they are included in data formatted for fixed-record processing  they may have undesirable effects or may require additional special  treatment to ensure that they result in their desired function.</abstract>
+  <abstract format="text/plain" language="en" script="Latn">This Ecma Standard specifies a set of 128 characters, (control characters and graphic characters such as letters, digits and symbols) with their coded representation. Most of these characters are mandatory and unchangeable, but provision is made for some flexibility to accommodate national and other requirements.
+This Ecma Standard specifies a 7-bit coded character set with a number of options. It also provides guidance on how to exercise the options to define specific national versions and application-oriented versions. Furthermore it specifies the International Reference Version (IRV) in which such options have been exercised.
+This character set is primarily intended for the interchange of information among data processing systems and associated equipment, and within data communication systems. The need for graphic characters and control functions in data processing has also been taken into account in determining this character set.
+This character set is applicable to alphabets of the Latin script.
+This character set allows the use of control characters for code extension where its character set is insufficient for particular applications. Procedures for the use of these control characters are specified in Standard ECMA-35.
+The definitions of the control characters mentioned in this Ecma Standard are specified in Standard ECMA-48. It is assumed that data associated with them are to be processed serially in a forward direction. When they are included in strings of data which are processed other than serially in a forward direction or when they are included in data formatted for fixed-record processing they may have undesirable effects or may require additional special treatment to ensure that they result in their desired function.</abstract>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6 1st edition</formattedref>
+      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <edition>1</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6 2nd edition</formattedref>
+      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <edition>2</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6 3rd edition</formattedref>
+      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <edition>3</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6 4th edition</formattedref>
+      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
+      <edition>4</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6 5th edition</formattedref>
+      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
+      <edition>5</edition>
     </bibitem>
   </relation>
   <place>Geneva</place>
