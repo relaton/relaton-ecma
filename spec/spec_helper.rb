@@ -19,7 +19,7 @@ RSpec.configure do |config|
 end
 
 def write_file(file, content)
-  File.write file, content, encoding: "UTF-8"
+  File.write file, content, encoding: "UTF-8" unless File.exist? file
 end
 
 def read_file(file)

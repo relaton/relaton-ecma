@@ -1,15 +1,14 @@
 module RelatonEcma
   module Scrapper
-    ENDPOINT = "https://www.ecma-international.org/publications/standards/".freeze
+    ENDPOINT = "https://www.ecma-international.org/publications-and-standards/".freeze
 
     class << self
       # @param code [String]
       # @return [RelatonBib::BibliographicItem]
-      def scrape_page(code) # rubocop:disable Metrics/AbcSize
-        num = /\d+$/.match(code).to_s.rjust 3, "0"
-        url = ENDPOINT + code.capitalize.sub(/\d+$/, num) + ".htm"
-        doc = Nokogiri::HTML OpenURI.open_uri url
-        parse_page doc, code, url
+      def scrape_page(code)
+        if code.match? /^ECMA-TR/i then scrape_tr code
+        else scrape_standard code
+        end
       rescue OpenURI::HTTPError => e
         return if e.io.status.first == "404"
 
@@ -18,11 +17,22 @@ module RelatonEcma
 
       private
 
-      # @param doc [Nokogiri::HTML::Document]
+      def scrape_standard(code)
+        # num = /\d+$/.match(code).to_s.rjust 3, "0"
+        url = "#{ENDPOINT}standards/#{code.downcase}"
+        parse_page code, url
+      end
+
+      def scrape_tr(code)
+        url = "#{ENDPOINT}technical-reports/#{code.downcase}"
+        parse_page code, url
+      end
+
       # @param code [String]
       # @param url [String]
       # @retrurn [RelatonBib::BibliographicItem]
-      def parse_page(doc, code, url)
+      def parse_page(code, url)
+        doc = Nokogiri::HTML OpenURI.open_uri url
         RelatonBib::BibliographicItem.new(
           type: "standard", docid: fetch_docid(code), language: ["en"], script: ["Latn"],
           link: fetch_link(doc, url), title: fetch_title(doc), abstract: fetch_abstract(doc),

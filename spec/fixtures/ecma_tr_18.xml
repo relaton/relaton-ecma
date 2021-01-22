@@ -1,0 +1,17 @@
+<bibdata type="standard">
+  <title format="text/plain" language="en" script="Latn">The meaning of conformance to standards</title>
+  <uri type="src">https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18</uri>
+  <docidentifier type="ECMA">ECMA-TR-18</docidentifier>
+  <date type="published">
+    <on>1983-09</on>
+  </date>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">Drafting computer standards and gaining international agreement to them is an expensive and time consuming process, therefore Ecma International is anxious to ensure that standards are as valuable to all concerned, whether suppliers or users, as it is possible to make them.
+Ecma International also believes firmly that the real value of computer standards depends on the existence of a comprehensive set of such standards. In general, the effectiveness of any one computer standard has to be considered in relation to other members of that set. It follows that if conformance to any standard is in doubt, that fact can seriously call in question the value of conformance to many other standards where no such doubt should really exist.
+Therefore Ecma International will seek to clarify the position over conformance to all kinds of computer standards in the interests of users, suppliers and the general public alike. That is the purpose of this report.</abstract>
+  <place>Geneva</place>
+  <ext>
+    <doctype>document</doctype>
+  </ext>
+</bibdata>
