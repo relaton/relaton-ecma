@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/relaton/relaton-data-ecma/master/data/ECMA_MEM_2021.yaml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '291'
+      Cache-Control:
+      - max-age=300
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Content-Type:
+      - text/plain; charset=utf-8
+      Etag:
+      - W/"8d9b303d10084e236440994f2d6bafb5cfd9bab97da304034080ef094e359ca8"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - FECE:1C17:8882:A5DC:603652E2
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 24 Feb 2021 13:21:39 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-vie21651-VIE
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1614172899.937796,VS0,VE155
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 207ca937919ef243fbfdd4a7248c3cf86347b282
+      Expires:
+      - Wed, 24 Feb 2021 13:26:39 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        ---
+        id: ECMAMEM/2021
+        title:
+          content: '"Memento 2021" for year2021'
+          language: en
+          script: Latn
+          format: text/plain
+        link:
+          content: https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf
+          type: doi
+        type: standard
+        docid:
+          id: ECMA MEM/2021
+          type: ECMA
+        date:
+          type: published
+          value: 2021-01
+        contributor:
+          organization:
+            name: Ecma International
+          role: publisher
+        revdate: 2021-01
+        language: en
+        script: Latn
+        place: Geneva
+        doctype: document
+  recorded_at: Wed, 24 Feb 2021 13:21:39 GMT
+recorded_with: VCR 6.0.0

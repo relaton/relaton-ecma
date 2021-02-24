@@ -33,9 +33,19 @@ RSpec.describe RelatonEcma do
 
   it "get ECMA techical report" do
     VCR.use_cassette "ecma_tr_18" do
-      bib = RelatonEcma::EcmaBibliography.get "ECMA-TR-18"
+      bib = RelatonEcma::EcmaBibliography.get "ECMA TR/18"
       xml = bib.to_xml bibdata: true
       file = "spec/fixtures/ecma_tr_18.xml"
+      write_file file, xml
+      expect(xml).to be_equivalent_to read_file file
+    end
+  end
+
+  it "get ECMA mementos" do
+    VCR.use_cassette "ecma_mem_2021" do
+      bib = RelatonEcma::EcmaBibliography.get "ECMA MEM/2021"
+      xml = bib.to_xml bibdata: true
+      file = "spec/fixtures/ecma_mem_2021.xml"
       write_file file, xml
       expect(xml).to be_equivalent_to read_file file
     end

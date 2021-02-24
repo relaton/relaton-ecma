@@ -1,10 +1,18 @@
 <bibdata type="standard">
+  <fetched>2021-02-24</fetched>
   <title format="text/plain" language="en" script="Latn">The meaning of conformance to standards</title>
-  <uri type="src">https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18</uri>
-  <docidentifier type="ECMA">ECMA-TR-18</docidentifier>
+  <uri type="src">https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18-duplique/</uri>
+  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA_TR-18_1st_edition_september_1983.pdf</uri>
+  <docidentifier type="ECMA">ECMA TR/18</docidentifier>
   <date type="published">
     <on>1983-09</on>
   </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Ecma International</name>
+    </organization>
+  </contributor>
   <language>en</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">Drafting computer standards and gaining international agreement to them is an expensive and time consuming process, therefore Ecma International is anxious to ensure that standards are as valuable to all concerned, whether suppliers or users, as it is possible to make them.

@@ -1,0 +1,21 @@
+<bibdata type="standard">
+  <fetched>2021-02-24</fetched>
+  <title format="text/plain" language="en" script="Latn">"Memento 2021" for year2021</title>
+  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf</uri>
+  <docidentifier type="ECMA">ECMA MEM/2021</docidentifier>
+  <date type="published">
+    <on>2021-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Ecma International</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <place>Geneva</place>
+  <ext>
+    <doctype>document</doctype>
+  </ext>
+</bibdata>
