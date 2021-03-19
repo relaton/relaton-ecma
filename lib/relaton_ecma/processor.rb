@@ -26,8 +26,7 @@ module RelatonEcma
     # @param hash [Hash]
     # @return [RelatonBib::BibliographicItem]
     def hash_to_bib(hash)
-      item_hash = ::RelatonBib::HashConverter.hash_to_bib(hash)
-      ::RelatonBib::BibliographicItem.new item_hash
+      ::RelatonBib::BibliographicItem.new hash
     end
 
     # Returns hash of XML grammar

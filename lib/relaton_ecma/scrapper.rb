@@ -20,8 +20,7 @@ module RelatonEcma
       # @retrurn [RelatonBib::BibliographicItem]
       def parse_page(url)
         doc = OpenURI.open_uri url
-        bib_hash = RelatonBib::HashConverter.hash_to_bib YAML.safe_load(doc)
-        RelatonBib::BibliographicItem.new bib_hash
+        RelatonBib::BibliographicItem.from_hash YAML.safe_load(doc)
       end
     end
   end

@@ -8,7 +8,7 @@ image:https://codeclimate.com/github/relaton/relaton-ecma/badges/gpa.svg["Code C
 image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-ecma.svg["Pull Requests", link="https://github.com/relaton/relaton-ecma/pulls"]
 image:https://img.shields.io/github/commits-since/relaton/relaton-ecma/latest.svg["Commits since latest",link="https://github.com/relaton/relaton-ecma/releases"]
 
-RelatonIetf is a Ruby gem that search and fetch standards from the https://www.ecma-international.org[European Computer Manufacturers Association].
+RelatonEcma is a Ruby gem that search and fetch standards from the https://www.ecma-international.org[European Computer Manufacturers Association].
 
 == Installation
 
@@ -16,7 +16,7 @@ Add this line to your application's Gemfile:
 
 [source,ruby]
 ----
-gem 'relaton_ecma'
+gem 'relaton-ecma'
 ----
 
 And then execute:
@@ -25,7 +25,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install relaton_ecma
+    $ gem install relaton-ecma
 
 == Usage
 
@@ -124,7 +124,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 == Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/relaton/relaton_ecma.
+Bug reports and pull requests are welcome on GitHub at https://github.com/relaton/relaton-ecma.
 
 
 == License
