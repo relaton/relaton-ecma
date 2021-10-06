@@ -98,6 +98,17 @@ item.to_xml bibdata: true
 </bibdata>"
 ----
 
+=== Typed links
+
+Each ECMA document has `src` and `doi` link types.
+
+[source,ruby]
+----
+item.link
+=> [#<RelatonBib::TypedUri:0x00007fb16ecde728 @content=#<Addressable::URI:0x7e4 URI:https://www.ecma-international.org/publications-and-standards/standards/ecma-6/>, @type="src">,
+ #<RelatonBib::TypedUri:0x00007fb16ecde070 @content=#<Addressable::URI:0x7f8 URI:https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf>, @type="doi">]
+----
+
 === Parse a file locally
 
 [source,ruby]

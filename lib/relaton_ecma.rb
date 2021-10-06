@@ -1,5 +1,6 @@
 require "nokogiri"
 require "open-uri"
+require "yaml"
 require "relaton_bib"
 require "relaton_ecma/version"
 require "relaton_ecma/scrapper"
