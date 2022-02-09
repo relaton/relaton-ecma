@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '771'
+      - '794'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Etag:
-      - W/"a1b3884345ce4b63bdcfb076fae9efb2a42d5547ec4658c7cfed021c68e5c975"
+      - W/"229889803f36afca0abb05793c31dcb5ddba68a76544081bbe696178187096a8"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,29 +39,29 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - F4CE:F429:F52516:105D6F4:61F3FAA8
+      - BDA2:DC93:7B3B8D:7FC050:61FA71FE
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 28 Jan 2022 14:16:08 GMT
+      - Wed, 02 Feb 2022 11:58:55 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-sof1510031-SOF
+      - cache-sof1510070-SOF
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1643379368.320135,VS0,VE213
+      - S1643803135.733358,VS0,VE276
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 0e4746cddb6ccff62404858d17ded852a7668075
+      - b1394109fe7411b2f2ed784e070674beab1fea9c
       Expires:
-      - Fri, 28 Jan 2022 14:21:08 GMT
+      - Wed, 02 Feb 2022 12:03:55 GMT
       Source-Age:
       - '0'
     body:
@@ -70,9 +70,11 @@ http_interactions:
         ---
         id: ECMATR/18
         title:
-          content: The meaning of conformance to standards
-          language: en
-          script: Latn
+        - content: The meaning of conformance to standards
+          language:
+          - en
+          script:
+          - Latn
           format: text/plain
         link:
         - content: https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18-duplique/
@@ -81,27 +83,35 @@ http_interactions:
           type: doi
         type: standard
         docid:
-          id: ECMA TR/18
+        - id: ECMA TR/18
           type: ECMA
+          primary: true
         date:
-          type: published
+        - type: published
           value: 1983-09
         contributor:
-          organization:
-            name: Ecma International
-          role: publisher
+        - organization:
+            name:
+            - Ecma International
+          role:
+          - publisher
         revdate: 1983-09
-        language: en
-        script: Latn
+        language:
+        - en
+        script:
+        - Latn
         abstract:
-          content: |-
+        - content: |-
             Drafting computer standards and gaining international agreement to them is an expensive and time consuming process, therefore Ecma International is anxious to ensure that standards are as valuable to all concerned, whether suppliers or users, as it is possible to make them.
             Ecma International also believes firmly that the real value of computer standards depends on the existence of a comprehensive set of such standards. In general, the effectiveness of any one computer standard has to be considered in relation to other members of that set. It follows that if conformance to any standard is in doubt, that fact can seriously call in question the value of conformance to many other standards where no such doubt should really exist.
             Therefore Ecma International will seek to clarify the position over conformance to all kinds of computer standards in the interests of users, suppliers and the general public alike. That is the purpose of this report.
-          language: en
-          script: Latn
+          language:
+          - en
+          script:
+          - Latn
           format: text/plain
-        place: Geneva
+        place:
+        - Geneva
         doctype: document
-  recorded_at: Fri, 28 Jan 2022 14:16:08 GMT
+  recorded_at: Wed, 02 Feb 2022 11:58:54 GMT
 recorded_with: VCR 6.0.0

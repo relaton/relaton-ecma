@@ -21,7 +21,7 @@ module RelatonEcma
           warn "[relaton-ecma] (\"#{code}\") found #{result.docidentifier.first.id}"
         else
           warn "[relaton-ecma] WARNING no match found online for #{code}. "\
-          "The code must be exactly like it is on the standards website."
+               "The code must be exactly like it is on the standards website."
         end
         result
       end

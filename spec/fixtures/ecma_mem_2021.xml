@@ -1,8 +1,8 @@
 <bibdata type="standard">
-  <fetched>2021-02-24</fetched>
+  <fetched>2022-02-02</fetched>
   <title format="text/plain" language="en" script="Latn">"Memento 2021" for year2021</title>
-  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf</uri>
-  <docidentifier type="ECMA">ECMA MEM/2021</docidentifier>
+  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2022-public.pdf</uri>
+  <docidentifier type="ECMA" primary="true">ECMA MEM/2021</docidentifier>
   <date type="published">
     <on>2021-01</on>
   </date>

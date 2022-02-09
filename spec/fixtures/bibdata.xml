@@ -1,9 +1,9 @@
 <bibdata type="standard">
-  <fetched>2021-02-23</fetched>
+  <fetched>2022-02-02</fetched>
   <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
   <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
-  <docidentifier type="ECMA">ECMA-6</docidentifier>
+  <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
   <date type="published">
     <on>1991-12</on>
   </date>

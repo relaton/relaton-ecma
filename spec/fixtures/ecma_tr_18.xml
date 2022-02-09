@@ -1,9 +1,9 @@
 <bibdata type="standard">
-  <fetched>2021-02-24</fetched>
+  <fetched>2022-02-02</fetched>
   <title format="text/plain" language="en" script="Latn">The meaning of conformance to standards</title>
   <uri type="src">https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18-duplique/</uri>
   <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA_TR-18_1st_edition_september_1983.pdf</uri>
-  <docidentifier type="ECMA">ECMA TR/18</docidentifier>
+  <docidentifier type="ECMA" primary="true">ECMA TR/18</docidentifier>
   <date type="published">
     <on>1983-09</on>
   </date>
