@@ -23,5 +23,9 @@ def write_file(file, content)
 end
 
 def read_file(file)
-  File.read(file, encoding: "UTF-8").gsub /(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s
+  replace_date File.read(file, encoding: "UTF-8")
+end
+
+def replace_date(xml)
+  xml.gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
 end
