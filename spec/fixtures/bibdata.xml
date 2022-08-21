@@ -1,5 +1,5 @@
 <bibdata type="standard">
-  <fetched>2022-02-02</fetched>
+  <fetched>2022-07-19</fetched>
   <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
   <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
@@ -25,18 +25,21 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <edition>1</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <edition>2</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <edition>3</edition>
     </bibitem>
   </relation>
@@ -44,6 +47,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
       <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <edition>4</edition>
     </bibitem>
   </relation>
@@ -51,6 +55,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
       <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <edition>5</edition>
     </bibitem>
   </relation>
