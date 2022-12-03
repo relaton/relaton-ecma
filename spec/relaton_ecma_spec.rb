@@ -1,5 +1,3 @@
-require "jing"
-
 RSpec.describe RelatonEcma do
   it "has a version number" do
     expect(RelatonEcma::VERSION).not_to be nil
@@ -15,16 +13,16 @@ RSpec.describe RelatonEcma do
     it "and return RelatonXML" do
       VCR.use_cassette "ecma_6" do
         bib = RelatonEcma::EcmaBibliography.get "ECMA-6"
-        bibitem = replace_date bib.to_xml
+        bibitem = bib.to_xml
         bibitem_file = "spec/fixtures/bibitem.xml"
         write_file bibitem_file, bibitem
         expect(bibitem).to be_equivalent_to read_file bibitem_file
 
-        bibdata = replace_date bib.to_xml(bibdata: true)
+        bibdata = bib.to_xml(bibdata: true)
         bibdata_file = "spec/fixtures/bibdata.xml"
         write_file bibdata_file, bibdata
         expect(bibdata).to be_equivalent_to read_file bibdata_file
-        schema = Jing.new "spec/fixtures/isobib.rng"
+        schema = Jing.new "grammars/relaton-ecma-compile.rng"
         errors = schema.validate bibdata_file
         expect(errors).to eq []
       end
@@ -34,7 +32,7 @@ RSpec.describe RelatonEcma do
   it "get ECMA techical report" do
     VCR.use_cassette "ecma_tr_18" do
       bib = RelatonEcma::EcmaBibliography.get "ECMA TR/18"
-      xml = replace_date bib.to_xml(bibdata: true)
+      xml = bib.to_xml(bibdata: true)
       file = "spec/fixtures/ecma_tr_18.xml"
       write_file file, xml
       expect(xml).to be_equivalent_to read_file file
@@ -44,7 +42,7 @@ RSpec.describe RelatonEcma do
   it "get ECMA mementos" do
     VCR.use_cassette "ecma_mem_2021" do
       bib = RelatonEcma::EcmaBibliography.get "ECMA MEM/2021"
-      xml = replace_date bib.to_xml(bibdata: true)
+      xml = bib.to_xml(bibdata: true)
       file = "spec/fixtures/ecma_mem_2021.xml"
       write_file file, xml
       expect(xml).to be_equivalent_to read_file file

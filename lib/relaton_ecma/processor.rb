@@ -12,21 +12,21 @@ module RelatonEcma
     # @param code [String]
     # @param date [String, NilClass] year
     # @param opts [Hash]
-    # @return [RelatonBib::BibliographicItem]
+    # @return [RelatonEcma::BibliographicItem]
     def get(code, date, opts)
       ::RelatonEcma::EcmaBibliography.get(code, date, opts)
     end
 
     # @param xml [String]
-    # @return [RelatonBib::BibliographicItem]
+    # @return [RelatonEcma::BibliographicItem]
     def from_xml(xml)
-      ::RelatonBib::XMLParser.from_xml xml
+      ::RelatonEcma::XMLParser.from_xml xml
     end
 
     # @param hash [Hash]
-    # @return [RelatonBib::BibliographicItem]
+    # @return [RelatonEcma::BibliographicItem]
     def hash_to_bib(hash)
-      ::RelatonBib::BibliographicItem.new hash
+      ::RelatonEcma::BibliographicItem.new hash
     end
 
     # Returns hash of XML grammar

@@ -1,5 +1,5 @@
-<bibdata type="standard">
-  <fetched>2022-07-19</fetched>
+<bibdata type="standard" schema-version="v1.2.1">
+  <fetched>2022-11-25</fetched>
   <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
   <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
@@ -60,7 +60,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     </bibitem>
   </relation>
   <place>Geneva</place>
-  <ext>
+  <ext schema-version="v1.0.0">
     <doctype>document</doctype>
   </ext>
 </bibdata>

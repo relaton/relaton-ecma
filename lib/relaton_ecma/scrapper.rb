@@ -17,10 +17,12 @@ module RelatonEcma
       private
 
       # @param url [String]
-      # @retrurn [RelatonBib::BibliographicItem]
+      # @retrurn [RelatonEcma::BibliographicItem]
       def parse_page(url)
         doc = OpenURI.open_uri url
-        RelatonBib::BibliographicItem.from_hash YAML.safe_load(doc)
+        hash = YAML.safe_load(doc)
+        hash["fetched"] = Date.today.to_s
+        BibliographicItem.from_hash hash
       end
     end
   end

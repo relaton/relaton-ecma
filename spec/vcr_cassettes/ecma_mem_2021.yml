@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '331'
+      - '317'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Etag:
-      - W/"69467d5e95d5fd7d7be15e453a6f210fbf6f58b83a975bd8c2e5765d083ec0ba"
+      - W/"fc5858a4d84fcb7b7806df5577285278b5b67e3409b76fbaf91774d191edd6d5"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,29 +39,29 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 6054:52BC:FB8A5D:10AAA4B:62FFA05C
+      - 83D4:5B40:4CBC5:263508:638B8922
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 19 Aug 2022 14:38:20 GMT
+      - Sat, 03 Dec 2022 17:36:35 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-vie6330-VIE
+      - cache-atl18479-ATL
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1660919900.402430,VS0,VE166
+      - S1670088995.968383,VS0,VE94
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 8cc4a07de535e3a7a1ee4b38b1fcc6d9a34186cd
+      - db03117252fa057989439a96cd0fcc5818e14b10
       Expires:
-      - Fri, 19 Aug 2022 14:43:20 GMT
+      - Sat, 03 Dec 2022 17:41:35 GMT
       Source-Age:
       - '0'
     body:
@@ -90,9 +90,9 @@ http_interactions:
         contributor:
         - organization:
             name:
-            - Ecma International
+            - content: Ecma International
           role:
-          - publisher
+          - type: publisher
         revdate: 2021-01
         language:
         - en
@@ -100,7 +100,6 @@ http_interactions:
         - Latn
         place:
         - Geneva
-        fetched: '2022-08-19'
         doctype: document
-  recorded_at: Fri, 19 Aug 2022 14:38:20 GMT
+  recorded_at: Sat, 03 Dec 2022 17:36:34 GMT
 recorded_with: VCR 6.1.0

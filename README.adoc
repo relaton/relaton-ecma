@@ -8,7 +8,7 @@ image:https://codeclimate.com/github/relaton/relaton-ecma/badges/gpa.svg["Code C
 image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-ecma.svg["Pull Requests", link="https://github.com/relaton/relaton-ecma/pulls"]
 image:https://img.shields.io/github/commits-since/relaton/relaton-ecma/latest.svg["Commits since latest",link="https://github.com/relaton/relaton-ecma/releases"]
 
-RelatonEcma is a Ruby gem that search and fetch standards from the https://www.ecma-international.org[European Computer Manufacturers Association].
+RelatonEcma is a Ruby gem that searches and fetches standards from the https://www.ecma-international.org[European Computer Manufacturers Association].
 
 == Installation
 
@@ -34,26 +34,27 @@ Or install it yourself as:
 [source,ruby]
 ----
 require 'relaton_ecma'
+=> true
 
 item = RelatonEcma::EcmaBibliography.get 'ECMA-6'
 [relaton-ecma] ("ECMA-6") fetching...
 [relaton-ecma] ("ECMA-6") found ECMA-6
-=> #<RelatonBib::BibliographicItem:0x007fe0c047e340
+#<RelatonEcma::BibliographicItem:0x00007fc645b11c10
 ...
 
 RelatonEcma::EcmaBibliography.get 'ECMA TR/18'
 [relaton-ecma] ("ECMA TR/18") fetching...
 [relaton-ecma] ("ECMA TR/18") found ECMA TR/18
-=> #<RelatonBib::BibliographicItem:0x007ff53d2011a8
+=> #<RelatonEcma::BibliographicItem:0x00007fc645c00cc0
 ...
 
 RelatonEcma::EcmaBibliography.get "ECMA MEM/2021"
 [relaton-ecma] ("ECMA MEM/2021") fetching...
 [relaton-ecma] ("ECMA MEM/2021") found ECMA MEM/2021
-=> #<RelatonBib::BibliographicItem:0x007ff53d240150
+=> #<RelatonEcma::BibliographicItem:0x00007fc665b2f060
 ...
 
-# Return nil if document doesn't exist.
+# Return nil if a document doesn't exist.
 RelatonEcma::EcmaBibliography.get '1111'
 [relaton-ecma] ("1111") fetching...
 [relaton-ecma] WARNING no match found online for 1111. The code must be exactly like it is on the standards website.
@@ -65,34 +66,28 @@ RelatonEcma::EcmaBibliography.get '1111'
 [source,ruby]
 ----
 item.to_xml
-"<bibitem id="ECMA-6" type="standard">
-  <title format="text/plain" language="en" script="Latn">7-bit Coded Character Set</title>
-  <uri type="src">https://www.ecma-international.org/publications/standards/Ecma-006.htm</uri>
-  <uri type="doi">http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-006.pdf</uri>
-  <docidentifier type="ECMA">ECMA-6</docidentifier>
-  <date type="published">
-    <on>1991-12</on>
-  </date>
-  <edition>6</edition>
-  ...
-</bibitem>"
+=> "<bibitem id="ECMA-6" type="standard" schema-version="v1.2.1">
+      <fetched>2022-12-03</fetched>
+      <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
+      <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
+      <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
+      <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      ...
+    </bibitem>"
 ----
 
 With `bibdata: true` option XML output wrapped with `bibdata` element and `ext` element added.
 [source,ruby]
 ----
 item.to_xml bibdata: true
-"<bibdata type="standard">
-  <title format="text/plain" language="en" script="Latn">7-bit Coded Character Set</title>
-  <uri type="src">https://www.ecma-international.org/publications/standards/Ecma-006.htm</uri>
-  <uri type="doi">http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-006.pdf</uri>
-  <docidentifier type="ECMA">ECMA-6</docidentifier>
-  <date type="published">
-    <on>1991-12</on>
-  </date>
-  <edition>6</edition>
+"<bibdata type="standard" schema-version="v1.2.1">
+  <fetched>2022-12-03</fetched>
+  <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
+  <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
+  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
+  <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
   ...
-  <ext>
+  <ext schema-version="v1.0.0">
     <doctype>document</doctype>
   </ext>
 </bibdata>"
@@ -113,18 +108,9 @@ item.link
 
 [source,ruby]
 ----
-item = RelatonBib::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml")
-=> #<RelatonBib::BibliographicItem:0x007f847dbe2f18
+item = RelatonEcma::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml")
+=> #<RelatonEcma::BibliographicItem:0x00007fc645b3bf10
 ...
-
-item.to_xml bibdata: true
-"<bibdata type="standard">
-  <title format="text/plain" language="en" script="Latn">7-bit Coded Character Set</title>
-  <uri type="src">https://www.ecma-international.org/publications/standards/Ecma-006.htm</uri>
-  <uri type="doi">http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-006.pdf</uri>
-  <docidentifier type="ECMA">ECMA-6</docidentifier>
-  ...
-</bibdata>"
 ----
 
 == Development

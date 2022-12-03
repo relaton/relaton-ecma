@@ -13,7 +13,7 @@ module RelatonEcma
       # @param code [String] the ECMA standard Code to look up (e..g "ECMA-6")
       # @param year [String] not used
       # @param opts [Hash] not used
-      # @return [RelatonBib::BibliographicItem] Relaton of reference
+      # @return [RelatonEcma::BibliographicItem] Relaton of reference
       def get(code, _year = nil, _opts = {})
         warn "[relaton-ecma] (\"#{code}\") fetching..."
         result = search code

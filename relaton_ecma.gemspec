@@ -37,5 +37,5 @@ Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
 
-  spec.add_dependency "relaton-bib", "~> 1.13.0"
+  spec.add_dependency "relaton-bib", "~> 1.14.0"
 end

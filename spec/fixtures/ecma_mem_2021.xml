@@ -1,5 +1,5 @@
-<bibdata type="standard">
-  <fetched>2022-02-02</fetched>
+<bibdata type="standard" schema-version="v1.2.1">
+  <fetched>2022-11-25</fetched>
   <title format="text/plain" language="en" script="Latn">"Memento 2021" for year2021</title>
   <uri type="doi">https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2022-public.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA MEM/2021</docidentifier>
@@ -15,7 +15,7 @@
   <language>en</language>
   <script>Latn</script>
   <place>Geneva</place>
-  <ext>
+  <ext schema-version="v1.0.0">
     <doctype>document</doctype>
   </ext>
 </bibdata>
