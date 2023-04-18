@@ -8,6 +8,7 @@ require "relaton_ecma/xml_parser"
 require "relaton_ecma/hash_converter"
 require "relaton_ecma/scrapper"
 require "relaton_ecma/ecma_bibliography"
+require "relaton_ecma/data_fetcher"
 
 module RelatonEcma
   # Returns hash of XML reammar

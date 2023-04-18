@@ -113,6 +113,25 @@ item = RelatonEcma::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml")
 ...
 ----
 
+=== Fetch data
+
+This gem uses a https://github.com/relaton/relaton-data-ecma[ecma-standards] prefetched dataset as a data source. The dataset contains documents from ECMA https://www.ecma-international.org/publications-and-standards/standards/[Standards], https://www.ecma-international.org/publications-and-standards/technical-reports/[Technical Reports], and https://www.ecma-international.org/publications-and-standards/mementos/[Mementos] pages.
+
+The method `RelatonEcma::DataFetcher.new(output: "data", format: "yaml").fetch` fetches all the documents from the pages and saves them to the `./data` folder in YAML format.
+Arguments:
+
+- `output` - folder to save documents (default './data').
+- `format` - the format in which the documents are saved. Possible formats are: `yaml`, `xml`, `bibxxml` (default `yaml`).
+
+[source,ruby]
+----
+RelatonEcma::DataFetcher.new.fetch
+Started at: 2022-06-23 09:36:55 +0200
+Stopped at: 2022-06-23 09:36:58 +0200
+Done in: 752 sec.
+=> nil
+----
+
 == Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

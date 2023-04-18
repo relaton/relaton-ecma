@@ -7,6 +7,7 @@ module RelatonEcma
       @prefix = "ECMA"
       @defaultprefix = /^ECMA(-|\s)/
       @idtype = "ECMA"
+      @datasets = %w[ecma-standards]
     end
 
     # @param code [String]
@@ -15,6 +16,18 @@ module RelatonEcma
     # @return [RelatonEcma::BibliographicItem]
     def get(code, date, opts)
       ::RelatonEcma::EcmaBibliography.get(code, date, opts)
+    end
+
+    #
+    # Fetch all the documents from a source
+    #
+    # @param [String] source source name (iec-harmonized-all, iec-harmonized-latest)
+    # @param [Hash] opts
+    # @option opts [String] :output directory to output documents
+    # @option opts [String] :format output format (xml, yaml, bibxml)
+    #
+    def fetch_data(_source, opts)
+      DataFetcher.new(**opts).fetch
     end
 
     # @param xml [String]

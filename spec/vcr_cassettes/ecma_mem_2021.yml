@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '317'
+      - '557'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Etag:
-      - W/"fc5858a4d84fcb7b7806df5577285278b5b67e3409b76fbaf91774d191edd6d5"
+      - W/"162b37018d0e7fc47f15346f48ac8d7765320bc84013428ac46b1f449fa9c2dc"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,36 +39,37 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 83D4:5B40:4CBC5:263508:638B8922
+      - 5942:3492:3E9EBC:5060CF:643C4B83
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 03 Dec 2022 17:36:35 GMT
+      - Sun, 16 Apr 2023 19:24:51 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-atl18479-ATL
+      - cache-iad-kjyo7100099-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1670088995.968383,VS0,VE94
+      - S1681673091.289853,VS0,VE112
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - db03117252fa057989439a96cd0fcc5818e14b10
+      - 84e7427f4e065657c837564205bb4c3532c874d2
       Expires:
-      - Sat, 03 Dec 2022 17:41:35 GMT
+      - Sun, 16 Apr 2023 19:29:51 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       string: |
         ---
-        id: ECMAMEM/2021
+        schema-version: v1.2.3
+        id: ECMAMEM-2021
         title:
         - content: '"Memento 2021" for year2021'
           language:
@@ -77,7 +78,7 @@ http_interactions:
           - Latn
           format: text/plain
         link:
-        - content: https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2022-public.pdf
+        - content: https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2023-public.pdf
           type: doi
         type: standard
         docid:
@@ -101,5 +102,5 @@ http_interactions:
         place:
         - Geneva
         doctype: document
-  recorded_at: Sat, 03 Dec 2022 17:36:34 GMT
+  recorded_at: Sun, 16 Apr 2023 19:24:51 GMT
 recorded_with: VCR 6.1.0

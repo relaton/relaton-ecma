@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '796'
+      - '1748'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Etag:
-      - W/"7223f991587f2eb462a62628f02743779e0bfc9838106faf52ecda0d065a1fc1"
+      - W/"87ee00cdf3385650c873bbbe6a54b642c05ade8dc08abf9cfb6c81dcc4c1423c"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,36 +39,37 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 0C7A:7015:82A5DC:AFEDE8:638B8922
+      - 720C:29F3:46D5C2:598499:643C4B82
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 03 Dec 2022 17:36:34 GMT
+      - Sun, 16 Apr 2023 19:24:50 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-atl18474-ATL
+      - cache-iad-kcgs7200177-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1670088995.739874,VS0,VE105
+      - S1681673091.869043,VS0,VE89
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - a70d5b56f7285f12dcc103fca7dfb8fac855880d
+      - 9a75472fa246ee0424a98a416c026693ccc4e9e1
       Expires:
-      - Sat, 03 Dec 2022 17:41:34 GMT
+      - Sun, 16 Apr 2023 19:29:50 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       string: |
         ---
-        id: ECMATR/18
+        schema-version: v1.2.3
+        id: ECMATR-18
         title:
         - content: The meaning of conformance to standards
           language:
@@ -113,5 +114,5 @@ http_interactions:
         place:
         - Geneva
         doctype: document
-  recorded_at: Sat, 03 Dec 2022 17:36:34 GMT
+  recorded_at: Sun, 16 Apr 2023 19:24:50 GMT
 recorded_with: VCR 6.1.0
