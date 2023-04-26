@@ -15,7 +15,6 @@ describe RelatonEcma::DataParser do
 
   context "#parse" do
     before do
-      expect(subject).to receive(:fetch_link).and_return :link
       expect(subject).to receive(:contributor).and_return :contributor
     end
 
@@ -26,6 +25,7 @@ describe RelatonEcma::DataParser do
       expect(subject).to receive(:fetch_title).and_return :title
       expect(subject).to receive(:fetch_abstract).and_return :abstract
       expect(subject).to receive(:fetch_date).and_return :date
+      expect(subject).to receive(:fetch_link).and_return :link
       expect(subject).to receive(:fetch_relation).and_return :relation
       expect(subject).to receive(:fetch_edition).and_return :edition
       expect(subject).to receive(:parse_editions).and_return []
@@ -45,6 +45,7 @@ describe RelatonEcma::DataParser do
       expect(subject).to receive(:fetch_mem_docid).and_return :docid
       expect(subject).to receive(:fetch_mem_title).and_return :title
       expect(subject).to receive(:fetch_mem_date).and_return :date
+      expect(subject).to receive(:fetch_mem_link).and_return :link
       expect(RelatonEcma::BibliographicItem).to receive(:new).with(
         type: "standard", language: ["en"], script: ["Latn"],
         contributor: :contributor, place: ["Geneva"], doctype: "document",
@@ -84,7 +85,6 @@ describe RelatonEcma::DataParser do
 
   context "#fetch_link" do
     before do
-      expect(RelatonBib::TypedUri).to receive(:new).with(type: "pdf", content: "link").and_return :link
       expect(subject).to receive(:edition_translation_link).with(nil).and_return [:translation]
     end
 
@@ -100,45 +100,20 @@ describe RelatonEcma::DataParser do
       HTML
       subject.instance_variable_set :@doc, doc
 
-      expect(hit).to receive(:[]).with(:href).and_return nil
-
-      expect(subject.fetch_link).to eq %i[link translation]
-    end
-
-    it "div/a" do
-      doc = Nokogiri::HTML <<~HTML
-        <html>
-          <body>
-            <div class="ecma-item-content-wrapper">
-              <a href="link">link</a>
-            </div>
-          </body>
-        </html>
-      HTML
-      subject.instance_variable_set :@doc, doc
-
-      expect(hit).to receive(:[]).with(:href).and_return nil
-
-      expect(subject.fetch_link).to eq %i[link translation]
-    end
-
-    it "div/p/a" do
-      doc = Nokogiri::HTML '<html><body><div><p><a href="link">link</a></p></div></body></html>'
-      subject.instance_variable_set :@doc, doc
-
+      expect(RelatonBib::TypedUri).to receive(:new).with(type: "pdf", content: "link").and_return :link
       expect(hit).to receive(:[]).with(:href).and_return nil
 
       expect(subject.fetch_link).to eq %i[link translation]
     end
 
     it "with url" do
-      doc = Nokogiri::HTML '<html><body><div><p><a href="link">link</a></p></div></body></html>'
+      doc = Nokogiri::HTML "<html><body></body></html>"
       subject.instance_variable_set :@doc, doc
 
       expect(hit).to receive(:[]).with(:href).and_return("url").twice
       expect(RelatonBib::TypedUri).to receive(:new).with(type: "src", content: "url").and_return :url
 
-      expect(subject.fetch_link).to eq %i[url link translation]
+      expect(subject.fetch_link).to eq %i[url translation]
     end
   end
 
@@ -185,6 +160,38 @@ describe RelatonEcma::DataParser do
       expect(link.first[:link].language).to eq "ja"
       expect(link.first[:link].script).to eq "Jpan"
     end
+  end
+
+  it "#fetch_mem_link" do
+    doc = Nokogiri::HTML <<~HTML
+      <html>
+        <body>
+          <div>
+            <div class="entry-content-wrapper">
+              <div>
+                <section>
+                  <div>
+                    <p>
+                      <a href="https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2023-public.pdf">Download</a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </body>
+      </html>
+    HTML
+    hit = doc.at("//div[contains(@class, 'entry-content-wrapper')][.//a[.='Download']]")
+    subject.instance_variable_set :@hit, hit
+
+    link = subject.fetch_mem_link
+
+    expect(link).to be_instance_of Array
+    expect(link.size).to eq 1
+    expect(link.first).to be_instance_of RelatonBib::TypedUri
+    expect(link.first.type).to eq "pdf"
+    expect(link.first.content.to_s).to eq "https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2023-public.pdf"
   end
 
   it "#edition_translation_link" do

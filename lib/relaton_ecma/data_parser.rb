@@ -1,7 +1,7 @@
 module RelatonEcma
   class DataParser
-    MATTRS = %i[docid title date].freeze
-    ATTRS = MATTRS + %i[link abstract relation edition].freeze
+    MATTRS = %i[docid title date link].freeze
+    ATTRS = MATTRS + %i[abstract relation edition].freeze
 
     #
     # Initialize parser
@@ -23,7 +23,6 @@ module RelatonEcma
         ATTRS.each { |a| @bib[a] = send "fetch_#{a}" }
       else
         MATTRS.each { |a| @bib[a] = send "fetch_mem_#{a}" }
-        @bib[:link] = fetch_link
       end
       @bib[:contributor] = contributor
       items = [BibliographicItem.new(**@bib)]
@@ -109,10 +108,15 @@ module RelatonEcma
       link = []
       link << RelatonBib::TypedUri.new(type: "src", content: @hit[:href]) if @hit[:href]
       ref = @doc.at('//div[@class="ecma-item-content-wrapper"]/span/a',
-                    '//div[@class="ecma-item-content-wrapper"]/a',
-                    "//div/p/a")
+                    '//div[@class="ecma-item-content-wrapper"]/a')
       link << RelatonBib::TypedUri.new(type: "pdf", content: ref[:href]) if ref
       link + edition_translation_link(@bib[:edition]&.content)
+    end
+
+    def fetch_mem_link
+      @hit.xpath("//div/p/a").map do |a|
+        RelatonBib::TypedUri.new(type: "pdf", content: a[:href])
+      end
     end
 
     def edition_translation_link(edition)
