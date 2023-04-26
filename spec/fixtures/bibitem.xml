@@ -1,8 +1,8 @@
 <bibitem id="ECMA-6" type="standard" schema-version="v1.2.3">
-  <fetched>2022-11-25</fetched>
+  <fetched>2023-04-26</fetched>
   <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
-  <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
+  <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
   <date type="published">
     <on>1991-12</on>
@@ -26,6 +26,9 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      <date type="published">
+        <on>1965-04</on>
+      </date>
       <edition>1</edition>
     </bibitem>
   </relation>
@@ -33,6 +36,9 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      <date type="published">
+        <on>1987-06</on>
+      </date>
       <edition>2</edition>
     </bibitem>
   </relation>
@@ -40,22 +46,31 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      <date type="published">
+        <on>1970-07</on>
+      </date>
       <edition>3</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
-      <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
+      <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      <date type="published">
+        <on>1973-08</on>
+      </date>
       <edition>4</edition>
     </bibitem>
   </relation>
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
-      <uri type="doi">https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
+      <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
+      <date type="published">
+        <on>1985-03</on>
+      </date>
       <edition>5</edition>
     </bibitem>
   </relation>

@@ -114,7 +114,7 @@ module RelatonEcma
     end
 
     def fetch_mem_link
-      @hit.xpath("//div/p/a").map do |a|
+      @hit.xpath("./div/section/div/p/a").map do |a|
         RelatonBib::TypedUri.new(type: "pdf", content: a[:href])
       end
     end
