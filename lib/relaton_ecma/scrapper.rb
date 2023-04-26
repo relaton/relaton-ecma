@@ -4,7 +4,7 @@ module RelatonEcma
 
     class << self
       # @param code [String]
-      # @return [RelatonBib::BibliographicItem]
+      # @return [RelatonEcma::BibliographicItem]
       def scrape_page(code)
         url = "#{ENDPOINT}#{code.gsub(/[\/\s]/, '_').upcase}.yaml"
         parse_page url

@@ -1,6 +1,7 @@
 require "nokogiri"
 require "open-uri"
 require "yaml"
+require "relaton/index"
 require "relaton_bib"
 require "relaton_ecma/version"
 require "relaton_ecma/bibliographic_item"
@@ -9,6 +10,7 @@ require "relaton_ecma/hash_converter"
 require "relaton_ecma/scrapper"
 require "relaton_ecma/ecma_bibliography"
 require "relaton_ecma/data_fetcher"
+require "relaton_ecma/data_parser"
 
 module RelatonEcma
   # Returns hash of XML reammar
