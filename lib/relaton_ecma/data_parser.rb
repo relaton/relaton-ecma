@@ -166,6 +166,8 @@ module RelatonEcma
     def fetch_relation # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
       @doc.xpath("//ul[@class='ecma-item-archives']/li").map do |rel|
         ref, ed, date, vol = edition_id_parts rel.at("span").text
+        next if ed.nil? || ed.empty?
+
         fref = RelatonBib::FormattedRef.new content: ref, language: "en", script: "Latn"
         docid = RelatonBib::DocumentIdentifier.new(type: "ECMA", id: ref, primary: true)
         link = rel.xpath("span/a").map { |l| RelatonBib::TypedUri.new type: "pdf", content: l[:href] }
@@ -173,10 +175,10 @@ module RelatonEcma
         extent = vol && [RelatonBib::Locality.new("volume", vol)]
         bibitem = BibliographicItem.new(
           docid: [docid], formattedref: fref, date: date, edition: edition,
-          link: link, extent: extent,
+          link: link, extent: extent
         )
         { type: "updates", bibitem: bibitem }
-      end
+      end.compact
     end
 
     #
