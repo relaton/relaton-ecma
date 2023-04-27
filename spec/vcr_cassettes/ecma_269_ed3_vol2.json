@@ -57,19 +57,19 @@
             "1; mode=block"
           ],
           "X-Github-Request-Id": [
-            "ADD0:8E34:4109F:51D3E:6449B82D"
+            "109E:7426:299B2:411C3:6449CF47"
           ],
           "Accept-Ranges": [
             "bytes"
           ],
           "Date": [
-            "Wed, 26 Apr 2023 23:47:57 GMT"
+            "Thu, 27 Apr 2023 01:26:31 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-iad-kcgs7200083-IAD"
+            "cache-iad-kjyo7100088-IAD"
           ],
           "X-Cache": [
             "MISS"
@@ -78,7 +78,7 @@
             "0"
           ],
           "X-Timer": [
-            "S1682552878.783532,VS0,VE85"
+            "S1682558791.441039,VS0,VE102"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -87,10 +87,10 @@
             "*"
           ],
           "X-Fastly-Request-Id": [
-            "af01b14c2d7bfd530b389385acf5d80ba1eeac09"
+            "545922d239f38e8e0f02154725082dec3ec86c05"
           ],
           "Expires": [
-            "Wed, 26 Apr 2023 23:52:57 GMT"
+            "Thu, 27 Apr 2023 01:31:31 GMT"
           ],
           "Source-Age": [
             "0"
@@ -101,7 +101,7 @@
           "string": "---\nschema-version: v1.2.3\nid: ECMA-269\ntitle:\n- content: Services for Computer Supported Telecommunications Applications (CSTA)\n    Phase III\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_3rd_edition_december_1998_volume_2.pdf\n  type: pdf\ntype: standard\ndocid:\n- id: ECMA-269\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 1998-12\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nedition:\n  content: '3'\nrevdate: 1998-12\nlanguage:\n- en\nscript:\n- Latn\nabstract:\n- content: |-\n    This Standard specifies an interface and services between two entities that request and provide communication services (e.g. Applications, middleware, PBX, IP-PBX, Softswitch, phone, softphone, software devices).\n    CSTA operates with existing interfaces, so that differences among various existing interfaces are hidden.\n    Services defined in this Standard allow functional integration between a computing network and a telecommunications network.\n    This Standard is part of a suite of CSTA Standards and Technical Reports. See documentation.\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nrelation:\n- type: updates\n  bibitem:\n    id: ECMA-269\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    edition:\n      content: '1'\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_2nd_edition_june_1998.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1998-06\n    edition:\n      content: '2'\n    revdate: 1998-06\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_3rd_edition_december_1998_volume_1.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_3rd_edition_december_1998_volume_2.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_3rd_edition_december_1998_volume_3.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_3rd_edition_december_1998_volume_4.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_4th_edition_june_2000.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2000-06\n    edition:\n      content: '4'\n    revdate: 2000-06\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_5th_edition_december_2002.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2002-12\n    edition:\n      content: '5'\n    revdate: 2002-12\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_6th_edition_june_2004.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2004-06\n    edition:\n      content: '6'\n    revdate: 2004-06\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_7th_edition_december_2006.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2006-12\n    edition:\n      content: '7'\n    revdate: 2006-12\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_8th_edition_june_2009.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2009-06\n    edition:\n      content: '8'\n    revdate: 2009-06\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-269\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-269_9th_edition_changes_since_the_previous_edition.pdf\n      type: pdf\n    docid:\n    - id: ECMA-269\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2011-12\n    edition:\n      content: '9'\n    revdate: 2011-12\n    formattedref:\n      content: ECMA-269\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\nplace:\n- Geneva\nextent:\n- locality:\n    type: volume\n    reference_from: '2'\ndoctype: document\next:\n  schema-version: v1.0.0\n"
         }
       },
-      "recorded_at": "Wed, 26 Apr 2023 23:47:57 GMT"
+      "recorded_at": "Thu, 27 Apr 2023 01:26:31 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"

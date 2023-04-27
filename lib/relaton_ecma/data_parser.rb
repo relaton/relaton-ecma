@@ -165,16 +165,15 @@ module RelatonEcma
     # @return [Array<Hash>]
     def fetch_relation # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
       @doc.xpath("//ul[@class='ecma-item-archives']/li").map do |rel|
-        ref, ed, on = rel.at("span").text.split ", "
+        ref, ed, date, vol = edition_id_parts rel.at("span").text
         fref = RelatonBib::FormattedRef.new content: ref, language: "en", script: "Latn"
         docid = RelatonBib::DocumentIdentifier.new(type: "ECMA", id: ref, primary: true)
-        date = []
-        date << RelatonBib::BibliographicDate.new(type: "published", on: on) if on && !on.empty?
         link = rel.xpath("span/a").map { |l| RelatonBib::TypedUri.new type: "pdf", content: l[:href] }
-        ed_cnt = ed&.match(/^\d+/).to_s
-        edition = RelatonBib::Edition.new content: ed_cnt if ed_cnt && !ed_cnt.empty?
+        edition = RelatonBib::Edition.new content: ed
+        extent = vol && [RelatonBib::Locality.new("volume", vol)]
         bibitem = BibliographicItem.new(
-          docid: [docid], formattedref: fref, date: date, edition: edition, link: link,
+          docid: [docid], formattedref: fref, date: date, edition: edition,
+          link: link, extent: extent,
         )
         { type: "updates", bibitem: bibitem }
       end
