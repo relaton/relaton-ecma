@@ -38,25 +38,55 @@ Documents can be fetched by reference. The structure of the reference depends on
 
 ECMA standards have the following reference structure: `ECMA-{NUMBER}[ ed{EDITION}][ vol{VOLUME}]`. Where: `NUMBER` is a number of the standard, `EDITION` is an edition of the standard, and `VOLUME` is a volume of the standard. The `EDITION` and `VOLUME` are optional. If `EDITION` is not specified, the latest edition of the standard will be fetched. If `VOLUME` is not specified, the first volume of the standard will be fetched. +
 ECMA technical reports have the following reference structure: `ECMA TR/{NUMBER}[ ed{EDITION}]`. Where: `NUMBER` is a number of the technical report, and `EDITION` is an edition of the technical report. The `EDITION` is optional. If `EDITION` is not specified, the latest edition of the technical report will be fetched. +
-ECMA mementos have the following reference structure: `ECMA MEM/{YEAR}`. Where: `YEAR` is the year of the memento.
+ECMA mementos have the following reference structure: `ECMA MEM/{YEAR}`. Where: `YEAR` is an year of the memento.
 
 [source,ruby]
 ----
 require 'relaton_ecma'
 => true
 
+# fetch ECMA standard
 item = RelatonEcma::EcmaBibliography.get 'ECMA-6'
 [relaton-ecma] ("ECMA-6") fetching...
 [relaton-ecma] ("ECMA-6") found ECMA-6
 #<RelatonEcma::BibliographicItem:0x00007fc645b11c10
 ...
 
+# fetch ECMA standard with edition and volume
+RelatonEcma::EcmaBibliography.get "ECMA-269 ed3 vol2"
+[relaton-ecma] ("ECMA-269 ed3 vol2") fetching...
+[relaton-ecma] ("ECMA-269 ed3 vol2") found ECMA-269
+=> #<RelatonEcma::BibliographicItem:0x0000000106ac8210
+...
+
+# fetch the last edition of ECMA standard
+bib = RelatonEcma::EcmaBibliography.get "ECMA-269"
+[relaton-ecma] ("ECMA-269") fetching...
+[relaton-ecma] ("ECMA-269") found ECMA-269
+=> #<RelatonEcma::BibliographicItem:0x000000010a408480
+...
+
+bib.edition.content
+=> "9"
+
+# fetch the first volume of ECMA standard
+bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3"
+[relaton-ecma] ("ECMA-269 ed3") fetching...
+[relaton-ecma] ("ECMA-269 ed3") found ECMA-269
+=> #<RelatonEcma::BibliographicItem:0x000000010a3ed0e0
+...
+
+bib.extent.first.reference_from
+=> "1"
+
+# fetch ECMA technical report
 RelatonEcma::EcmaBibliography.get 'ECMA TR/18'
 [relaton-ecma] ("ECMA TR/18") fetching...
 [relaton-ecma] ("ECMA TR/18") found ECMA TR/18
 => #<RelatonEcma::BibliographicItem:0x00007fc645c00cc0
 ...
 
+# fetch ECMA memento
 RelatonEcma::EcmaBibliography.get "ECMA MEM/2021"
 [relaton-ecma] ("ECMA MEM/2021") fetching...
 [relaton-ecma] ("ECMA MEM/2021") found ECMA MEM/2021

@@ -86,35 +86,6 @@ describe RelatonEcma::DataFetcher do
     end
   end
 
-  # context "#edition_id_parts" do
-  #   shared_examples "edition id parts" do |text, docid, edition, date, volume|
-  #     it do
-  #       id, ed, dt, vol = subject.edition_id_parts(text)
-  #       expect(id).to eq docid
-  #       expect(ed).to eq edition
-  #       expect(vol).to eq volume
-  #       expect(dt).to be_instance_of Array
-  #       if date
-  #         expect(dt.size).to eq 1
-  #         expect(dt.first).to be_instance_of RelatonBib::BibliographicDate
-  #         expect(dt.first.on).to eq date
-  #         expect(dt.first.type).to eq "published"
-  #       else
-  #         expect(dt).to be_empty
-  #       end
-  #     end
-  #   end
-
-  #   it_behaves_like "edition id parts", "ECMA-402 1st edition, December 2012", "ECMA-402", "1", "2012-12", nil
-  #   it_behaves_like "edition id parts", "ECMA-402, 2nd edition, May 2011", "ECMA-402", "2", "2011-05", nil
-  #   it_behaves_like "edition id parts", "ECMA-402 3rd edition, December 2012", "ECMA-402", "3", "2012-12", nil
-  #   it_behaves_like "edition id parts", "ECMA-402 4th edition, December 2012", "ECMA-402", "4", "2012-12", nil
-  #   it_behaves_like "edition id parts", "ECMA-410, 2nd edition. June 2015", "ECMA-410", "2", "2015-06", nil
-  #   it_behaves_like "edition id parts", "ECMA-269, 1st edition", "ECMA-269", "1", nil, nil
-  #   it_behaves_like "edition id parts", "ECMA-269, Volume 1, 3rd edition, December 1998", "ECMA-269", "3", "1998-12", "1"
-  #   it_behaves_like "edition id parts", "ECMA-269, 9th edition, December 2011, changes since the previous edition", "ECMA-269", "9", "2011-12", nil
-  # end
-
   context "#write_file" do
     let(:bib) do
       docid = double :docid, id: "ECMA TR/27"

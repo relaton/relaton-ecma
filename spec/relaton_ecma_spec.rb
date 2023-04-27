@@ -34,12 +34,25 @@ RSpec.describe RelatonEcma do
       expect(bib.edition.content).to eq "5.1"
     end
 
-    # it "with specific edition and volume", vcr: { cassette_name: "ecma_269_ed3_vol2" } do
-    #   bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3 vol2"
-    #   expect(bib.docidentifier.first.id).to eq "ECMA-269"
-    #   expect(bib.edition.content).to eq "3"
-    #   expect(bib.extent.first.reference_from).to eq "2"
-    # end
+    it "with specific edition and volume", vcr: { cassette_name: "ecma_269_ed3_vol2" } do
+      bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3 vol2"
+      expect(bib.docidentifier.first.id).to eq "ECMA-269"
+      expect(bib.edition.content).to eq "3"
+      expect(bib.extent.first.reference_from).to eq "2"
+    end
+
+    it "last edition", vcr: { cassette_name: "ecma_269" } do
+      bib = RelatonEcma::EcmaBibliography.get "ECMA-269"
+      expect(bib.docidentifier.first.id).to eq "ECMA-269"
+      expect(bib.edition.content).to eq "9"
+    end
+
+    it "first volume", vcr: { cassette_name: "ecma_269_ed3" } do
+      bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3"
+      expect(bib.docidentifier.first.id).to eq "ECMA-269"
+      expect(bib.edition.content).to eq "3"
+      expect(bib.extent.first.reference_from).to eq "1"
+    end
   end
 
   it "get ECMA techical report" do

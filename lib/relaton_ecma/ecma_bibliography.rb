@@ -14,8 +14,9 @@ module RelatonEcma
       # @return [Array<Hash>]
       #
       def search(ref)
-        # Scrapper.scrape_page code
         refparts = parse_ref ref
+        return false unless refparts
+
         index = Relaton::Index.find_or_create :ECMA, url: "#{ENDPOINT}index.zip"
         index.search { |row| match_ref refparts, row }
       end
@@ -38,21 +39,17 @@ module RelatonEcma
       # @param year [String] not used
       # @param opts [Hash] not used
       # @return [RelatonEcma::BibliographicItem] Relaton of reference
-      def get(code, _year = nil, _opts = {}) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
+      def get(code, _year = nil, _opts = {})
         warn "[relaton-ecma] (\"#{code}\") fetching..."
-        result = search(code).min { |a, b| compare_edition_volume a, b }
+        result = fetch_doc(code)
         if result
-          item = fetch_doc(result[:file])
-          warn "[relaton-ecma] (\"#{code}\") found #{item.docidentifier.first.id}"
-          item
+          warn "[relaton-ecma] (\"#{code}\") found #{result.docidentifier.first.id}"
+          # item
         else
           warn "[relaton-ecma] WARNING no match found online for #{code}. " \
                "The code must be exactly like it is on the standards website."
         end
-      rescue OpenURI::HTTPError => e
-        return if e.io.status.first == "404"
-
-        raise RelatonBib::RequestError, "No document found for #{code} reference. #{e.message}"
+        result
       end
 
       def compare_edition_volume(aaa, bbb)
@@ -60,12 +57,19 @@ module RelatonEcma
         comp.zero? ? aaa[:id][:vol] <=> bbb[:id][:vol] : comp
       end
 
-      def fetch_doc(file)
-        url = "#{ENDPOINT}#{file}"
+      def fetch_doc(code) # rubocop:disable Metrics/AbcSize
+        row = search(code).min { |a, b| compare_edition_volume a, b }
+        return unless row
+
+        url = "#{ENDPOINT}#{row[:file]}"
         doc = OpenURI.open_uri url
         hash = YAML.safe_load doc
         hash["fetched"] = Date.today.to_s
         BibliographicItem.from_hash hash
+      rescue OpenURI::HTTPError => e
+        return if e.io.status.first == "404"
+
+        raise RelatonBib::RequestError, "No document found for #{code} reference. #{e.message}"
       end
     end
   end
