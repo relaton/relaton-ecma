@@ -29,7 +29,16 @@ Or install it yourself as:
 
 == Usage
 
-=== Search document
+=== Fetch documents
+
+Documents can be fetched by reference. The structure of the reference depends on the type of the document. There are three types of documents:
+- ECMA standards
+- ECMA technical reports
+- ECMA mementos
+
+ECMA standards have the following reference structure: `ECMA-{NUMBER}[ ed{EDITION}][ vol{VOLUME}]`. Where: `NUMBER` is a number of the standard, `EDITION` is an edition of the standard, and `VOLUME` is a volume of the standard. The `EDITION` and `VOLUME` are optional. If `EDITION` is not specified, the latest edition of the standard will be fetched. If `VOLUME` is not specified, the first volume of the standard will be fetched. +
+ECMA technical reports have the following reference structure: `ECMA TR/{NUMBER}[ ed{EDITION}]`. Where: `NUMBER` is a number of the technical report, and `EDITION` is an edition of the technical report. The `EDITION` is optional. If `EDITION` is not specified, the latest edition of the technical report will be fetched. +
+ECMA mementos have the following reference structure: `ECMA MEM/{YEAR}`. Where: `YEAR` is the year of the memento.
 
 [source,ruby]
 ----

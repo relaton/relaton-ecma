@@ -169,7 +169,7 @@ module RelatonEcma
         fref = RelatonBib::FormattedRef.new content: ref, language: "en", script: "Latn"
         docid = RelatonBib::DocumentIdentifier.new(type: "ECMA", id: ref, primary: true)
         date = []
-        date << RelatonBib::BibliographicDate.new(type: "published", on: on) if on
+        date << RelatonBib::BibliographicDate.new(type: "published", on: on) if on && !on.empty?
         link = rel.xpath("span/a").map { |l| RelatonBib::TypedUri.new type: "pdf", content: l[:href] }
         ed_cnt = ed&.match(/^\d+/).to_s
         edition = RelatonBib::Edition.new content: ed_cnt if ed_cnt && !ed_cnt.empty?

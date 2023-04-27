@@ -63,22 +63,22 @@
             "bytes"
           ],
           "Date": [
-            "Wed, 26 Apr 2023 21:46:24 GMT"
+            "Wed, 26 Apr 2023 22:25:24 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-iad-kcgs7200045-IAD"
+            "cache-iad-kjyo7100116-IAD"
           ],
           "X-Cache": [
-            "MISS"
+            "HIT"
           ],
           "X-Cache-Hits": [
-            "0"
+            "1"
           ],
           "X-Timer": [
-            "S1682545584.128323,VS0,VE110"
+            "S1682547924.227920,VS0,VE95"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -87,10 +87,10 @@
             "*"
           ],
           "X-Fastly-Request-Id": [
-            "c7a3167f3c1a89d763ae34cd0c2273d07b69d167"
+            "ebbf0274e4c5c772dc68857b5ea8f0534d7cbb8f"
           ],
           "Expires": [
-            "Wed, 26 Apr 2023 21:51:24 GMT"
+            "Wed, 26 Apr 2023 22:30:24 GMT"
           ],
           "Source-Age": [
             "0"
@@ -101,7 +101,7 @@
           "string": "---\nschema-version: v1.2.3\nid: ECMA-6\ntitle:\n- content: 7-bit coded character set\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://www.ecma-international.org/publications-and-standards/standards/ecma-6/\n  type: src\n- content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf\n  type: pdf\ntype: standard\ndocid:\n- id: ECMA-6\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 1991-12\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nedition:\n  content: '6'\nrevdate: 1991-12\nlanguage:\n- en\nscript:\n- Latn\nabstract:\n- content: |-\n    This Ecma Standard specifies a set of 128 characters, (control characters and graphic characters such as letters, digits and symbols) with their coded representation. Most of these characters are mandatory and unchangeable, but provision is made for some flexibility to accommodate national and other requirements.\n    This Ecma Standard specifies a 7-bit coded character set with a number of options. It also provides guidance on how to exercise the options to define specific national versions and application-oriented versions. Furthermore it specifies the International Reference Version (IRV) in which such options have been exercised.\n    This character set is primarily intended for the interchange of information among data processing systems and associated equipment, and within data communication systems. The need for graphic characters and control functions in data processing has also been taken into account in determining this character set.\n    This character set is applicable to alphabets of the Latin script.\n    This character set allows the use of control characters for code extension where its character set is insufficient for particular applications. Procedures for the use of these control characters are specified in Standard ECMA-35.\n    The definitions of the control characters mentioned in this Ecma Standard are specified in Standard ECMA-48. It is assumed that data associated with them are to be processed serially in a forward direction. When they are included in strings of data which are processed other than serially in a forward direction or when they are included in data formatted for fixed-record processing they may have undesirable effects or may require additional special treatment to ensure that they result in their desired function.\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nrelation:\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1965-04\n    edition:\n      content: '1'\n    revdate: 1965-04\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1987-06\n    edition:\n      content: '2'\n    revdate: 1987-06\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1970-07\n    edition:\n      content: '3'\n    revdate: 1970-07\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf\n      type: pdf\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1973-08\n    edition:\n      content: '4'\n    revdate: 1973-08\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf\n      type: pdf\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1985-03\n    edition:\n      content: '5'\n    revdate: 1985-03\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\nplace:\n- Geneva\ndoctype: document\next:\n  schema-version: v1.0.0\n"
         }
       },
-      "recorded_at": "Wed, 26 Apr 2023 21:46:24 GMT"
+      "recorded_at": "Wed, 26 Apr 2023 22:25:24 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"
