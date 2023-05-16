@@ -47,5 +47,12 @@ module RelatonEcma
     def grammar_hash
       @grammar_hash ||= ::RelatonEcma.grammar_hash
     end
+
+    #
+    # Remove index file
+    #
+    def remove_index_file
+      Relaton::Index.find_or_create(:ECMA, url: true).remove_file
+    end
   end
 end
