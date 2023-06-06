@@ -57,19 +57,19 @@
             "1; mode=block"
           ],
           "X-Github-Request-Id": [
-            "0D2E:64EC:30EF9F1:39FCFC6:6463AF09"
+            "A896:6179:FDBDDB:132A738:647F414B"
           ],
           "Accept-Ranges": [
             "bytes"
           ],
           "Date": [
-            "Tue, 16 May 2023 16:27:53 GMT"
+            "Tue, 06 Jun 2023 14:23:08 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-atl18430-ATL"
+            "cache-atl18454-ATL"
           ],
           "X-Cache": [
             "MISS"
@@ -78,7 +78,7 @@
             "0"
           ],
           "X-Timer": [
-            "S1684254473.052628,VS0,VE84"
+            "S1686061388.954256,VS0,VE101"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -87,10 +87,10 @@
             "*"
           ],
           "X-Fastly-Request-Id": [
-            "0a346eedad022e50a2db8b0759e8cfeefdecd59a"
+            "54d689011339490d5ca6d29aebf423d42e027d36"
           ],
           "Expires": [
-            "Tue, 16 May 2023 16:32:53 GMT"
+            "Tue, 06 Jun 2023 14:28:08 GMT"
           ],
           "Source-Age": [
             "0"
@@ -101,7 +101,7 @@
           "string": "---\nschema-version: v1.2.3\nid: ECMA-262\ntitle:\n- content: ECMAScript® 2022 language specification\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://262.ecma-international.org/5.1/index.html\n  type: src\ntype: standard\ndocid:\n- id: ECMA-262\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 2011-06\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nedition:\n  content: '5.1'\nrevdate: 2011-06\nlanguage:\n- en\nscript:\n- Latn\nabstract:\n- content: |-\n    This Standard defines the ECMAScript 2022 general-purpose programming language.\n    Kindly note that the normative copy is the HTML version; the PDF version has been produced to generate a printable document.\n    This 13th edition has been prepared under the Ecma RF patent policy.\n    Please note that for ECMAScript Edition 4 the Ecma standard number “ECMA-262 Edition 4” was reserved but not used in the Ecma publication process. Therefore “ECMA-262 Edition 4” as an Ecma International publication does not exist.\n    The latest drafts are available at: https://tc39.github.io/ecma262/. Reporters should generally only file bugs if the bug is still present in the latest drafts.\n    Please find hereafter the place to file bugs: https://github.com/tc39/ecma262#ecmascript.\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nrelation:\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1997-06\n    edition:\n      content: '1'\n    revdate: 1997-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_2nd_edition_august_1998.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1998-08\n    edition:\n      content: '2'\n    revdate: 1998-08\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1999-12\n    edition:\n      content: '3'\n    revdate: 1999-12\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    edition:\n      content: '4'\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2009-12\n    edition:\n      content: '5'\n    revdate: 2009-12\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_5.1_edition_june_2011.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2011-06\n    edition:\n      content: '5.1'\n    revdate: 2011-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_6th_edition_june_2015.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2015-06\n    edition:\n      content: '6'\n    revdate: 2015-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_7th_edition_june_2016.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2016-06\n    edition:\n      content: '7'\n    revdate: 2016-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_8th_edition_june_2017.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2017-06\n    edition:\n      content: '8'\n    revdate: 2017-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_9th_edition_june_2018.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2018-06\n    edition:\n      content: '9'\n    revdate: 2018-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_10th_edition_june_2019.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2019-06\n    edition:\n      content: '10'\n    revdate: 2019-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_11th_edition_june_2020.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2020-06\n    edition:\n      content: '11'\n    revdate: 2020-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-262\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-262_12th_edition_june_2021.pdf\n      type: pdf\n    docid:\n    - id: ECMA-262\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 2021-06\n    edition:\n      content: '12'\n    revdate: 2021-06\n    formattedref:\n      content: ECMA-262\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\nplace:\n- Geneva\ndoctype: document\next:\n  schema-version: v1.0.0\n"
         }
       },
-      "recorded_at": "Tue, 16 May 2023 16:27:53 GMT"
+      "recorded_at": "Tue, 06 Jun 2023 14:23:07 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"

@@ -57,19 +57,19 @@
             "1; mode=block"
           ],
           "X-Github-Request-Id": [
-            "19B2:7D6D:3009A95:3917006:6463AF07"
+            "73D6:64F7:111CEE1:146BA35:647F414B"
           ],
           "Accept-Ranges": [
             "bytes"
           ],
           "Date": [
-            "Tue, 16 May 2023 16:27:51 GMT"
+            "Tue, 06 Jun 2023 14:23:07 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-atl18433-ATL"
+            "cache-atl18428-ATL"
           ],
           "X-Cache": [
             "MISS"
@@ -78,7 +78,7 @@
             "0"
           ],
           "X-Timer": [
-            "S1684254472.684697,VS0,VE104"
+            "S1686061387.234346,VS0,VE99"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -87,10 +87,10 @@
             "*"
           ],
           "X-Fastly-Request-Id": [
-            "3c7ab5d04fb4e120f450a3b18b6a7bedf362ea1c"
+            "197a93b5eaf1243f2500a754854c84b8e0b7132b"
           ],
           "Expires": [
-            "Tue, 16 May 2023 16:32:51 GMT"
+            "Tue, 06 Jun 2023 14:28:07 GMT"
           ],
           "Source-Age": [
             "0"
@@ -101,7 +101,7 @@
           "string": "---\nschema-version: v1.2.3\nid: ECMAMEM-2021\ntitle:\n- content: '\"Memento 2021\" for year 2021'\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf\n  type: pdf\ntype: standard\ndocid:\n- id: ECMA MEM/2021\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 2021-01\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nrevdate: 2021-01\nlanguage:\n- en\nscript:\n- Latn\nplace:\n- Geneva\ndoctype: document\next:\n  schema-version: v1.0.0\n"
         }
       },
-      "recorded_at": "Tue, 16 May 2023 16:27:51 GMT"
+      "recorded_at": "Tue, 06 Jun 2023 14:23:07 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"

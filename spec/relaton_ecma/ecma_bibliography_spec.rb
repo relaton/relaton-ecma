@@ -16,4 +16,11 @@ describe RelatonEcma::EcmaBibliography do
       expect(described_class.get("ECMA-6")).to be_nil
     end.to output(/no match found online for ECMA-6/).to_stderr
   end
+
+  context "search" do
+    it "return empty array" do
+      expect(described_class).to receive(:parse_ref).with("ECMA-6").and_return nil
+      expect(described_class.search("ECMA-6")).to eq []
+    end
+  end
 end

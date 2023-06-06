@@ -15,7 +15,7 @@ module RelatonEcma
       #
       def search(ref)
         refparts = parse_ref ref
-        return false unless refparts
+        return [] unless refparts
 
         index = Relaton::Index.find_or_create :ECMA, url: "#{ENDPOINT}index.zip"
         index.search { |row| match_ref refparts, row }
