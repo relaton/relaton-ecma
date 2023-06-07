@@ -22,15 +22,15 @@ module RelatonEcma
       end
 
       def parse_ref(ref)
-        %r{^
-          (?<id>ECMA(?:[\d-]+|\s\w+/\d+))
+        %r{^ECMA[-\s]
+          (?<id>(?:\d[\d-]*|\w+/\d+))
           (?:\sed(?<ed>[\d.]+))?
           (?:\svol(?<vol>\d+))?
         }x.match ref
       end
 
-      def match_ref(refparts, row)
-        row[:id][:id] == refparts[:id] &&
+      def match_ref(refparts, row) # rubocop:disable Metrics/AbcSize
+        row[:id][:id].match?(/^ECMA[-\s]#{refparts[:id]}/) &&
           (refparts[:ed].nil? || row[:id][:ed] == refparts[:ed]) &&
           (refparts[:vol].nil? || row[:id][:vol] == refparts[:vol])
       end

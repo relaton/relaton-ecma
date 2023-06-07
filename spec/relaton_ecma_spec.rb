@@ -42,7 +42,7 @@ RSpec.describe RelatonEcma do
     end
 
     it "last edition", vcr: { cassette_name: "ecma_269" } do
-      bib = RelatonEcma::EcmaBibliography.get "ECMA-269"
+      bib = RelatonEcma::EcmaBibliography.get "ECMA 269"
       expect(bib.docidentifier.first.id).to eq "ECMA-269"
       expect(bib.edition.content).to eq "9"
     end
