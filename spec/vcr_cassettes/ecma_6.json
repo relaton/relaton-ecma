@@ -6,7 +6,7 @@
         "uri": "https://raw.githubusercontent.com/relaton/relaton-data-ecma/master/data/ECMA-6-6.yaml",
         "body": {
           "encoding": "US-ASCII",
-          "string": ""
+          "base64_string": ""
         },
         "headers": {
           "Accept-Encoding": [
@@ -57,19 +57,19 @@
             "1; mode=block"
           ],
           "X-Github-Request-Id": [
-            "15B6:64F7:111CEF2:146BA44:647F414B"
+            "12A0:1603:79D72B:90FDE7:6488CEFC"
           ],
           "Accept-Ranges": [
             "bytes"
           ],
           "Date": [
-            "Tue, 06 Jun 2023 14:23:07 GMT"
+            "Tue, 13 Jun 2023 20:18:04 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-atl18423-ATL"
+            "cache-atl18475-ATL"
           ],
           "X-Cache": [
             "MISS"
@@ -78,7 +78,7 @@
             "0"
           ],
           "X-Timer": [
-            "S1686061387.423785,VS0,VE103"
+            "S1686687485.767610,VS0,VE104"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -86,11 +86,14 @@
           "Access-Control-Allow-Origin": [
             "*"
           ],
+          "Cross-Origin-Resource-Policy": [
+            "cross-origin"
+          ],
           "X-Fastly-Request-Id": [
-            "56f5e963a6e67d14f30ff9ddc45285f27de8831f"
+            "495e3b7b0fa50aefccb187d45e37fa08fae36bf2"
           ],
           "Expires": [
-            "Tue, 06 Jun 2023 14:28:07 GMT"
+            "Tue, 13 Jun 2023 20:23:04 GMT"
           ],
           "Source-Age": [
             "0"
@@ -98,10 +101,10 @@
         },
         "body": {
           "encoding": "ASCII-8BIT",
-          "string": "---\nschema-version: v1.2.3\nid: ECMA-6\ntitle:\n- content: 7-bit coded character set\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://www.ecma-international.org/publications-and-standards/standards/ecma-6/\n  type: src\n- content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf\n  type: pdf\ntype: standard\ndocid:\n- id: ECMA-6\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 1991-12\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nedition:\n  content: '6'\nrevdate: 1991-12\nlanguage:\n- en\nscript:\n- Latn\nabstract:\n- content: |-\n    This Ecma Standard specifies a set of 128 characters, (control characters and graphic characters such as letters, digits and symbols) with their coded representation. Most of these characters are mandatory and unchangeable, but provision is made for some flexibility to accommodate national and other requirements.\n    This Ecma Standard specifies a 7-bit coded character set with a number of options. It also provides guidance on how to exercise the options to define specific national versions and application-oriented versions. Furthermore it specifies the International Reference Version (IRV) in which such options have been exercised.\n    This character set is primarily intended for the interchange of information among data processing systems and associated equipment, and within data communication systems. The need for graphic characters and control functions in data processing has also been taken into account in determining this character set.\n    This character set is applicable to alphabets of the Latin script.\n    This character set allows the use of control characters for code extension where its character set is insufficient for particular applications. Procedures for the use of these control characters are specified in Standard ECMA-35.\n    The definitions of the control characters mentioned in this Ecma Standard are specified in Standard ECMA-48. It is assumed that data associated with them are to be processed serially in a forward direction. When they are included in strings of data which are processed other than serially in a forward direction or when they are included in data formatted for fixed-record processing they may have undesirable effects or may require additional special treatment to ensure that they result in their desired function.\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nrelation:\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1965-04\n    edition:\n      content: '1'\n    revdate: 1965-04\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1987-06\n    edition:\n      content: '2'\n    revdate: 1987-06\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1970-07\n    edition:\n      content: '3'\n    revdate: 1970-07\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf\n      type: pdf\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1973-08\n    edition:\n      content: '4'\n    revdate: 1973-08\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\n- type: updates\n  bibitem:\n    id: ECMA-6\n    link:\n    - content: https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf\n      type: pdf\n    docid:\n    - id: ECMA-6\n      type: ECMA\n      primary: true\n    date:\n    - type: published\n      value: 1985-03\n    edition:\n      content: '5'\n    revdate: 1985-03\n    formattedref:\n      content: ECMA-6\n      language:\n      - en\n      script:\n      - Latn\n      format: text/plain\nplace:\n- Geneva\ndoctype: document\next:\n  schema-version: v1.0.0\n"
+          "base64_string": "LS0tCnNjaGVtYS12ZXJzaW9uOiB2MS4yLjMKaWQ6IEVDTUEtNgp0aXRsZToK\nLSBjb250ZW50OiA3LWJpdCBjb2RlZCBjaGFyYWN0ZXIgc2V0CiAgbGFuZ3Vh\nZ2U6CiAgLSBlbgogIHNjcmlwdDoKICAtIExhdG4KICBmb3JtYXQ6IHRleHQv\ncGxhaW4KbGluazoKLSBjb250ZW50OiBodHRwczovL3d3dy5lY21hLWludGVy\nbmF0aW9uYWwub3JnL3B1YmxpY2F0aW9ucy1hbmQtc3RhbmRhcmRzL3N0YW5k\nYXJkcy9lY21hLTYvCiAgdHlwZTogc3JjCi0gY29udGVudDogaHR0cHM6Ly93\nd3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy93cC1jb250ZW50L3VwbG9hZHMv\nRUNNQS02XzZ0aF9lZGl0aW9uX2RlY2VtYmVyXzE5OTEucGRmCiAgdHlwZTog\ncGRmCnR5cGU6IHN0YW5kYXJkCmRvY2lkOgotIGlkOiBFQ01BLTYKICB0eXBl\nOiBFQ01BCiAgcHJpbWFyeTogdHJ1ZQpkYXRlOgotIHR5cGU6IHB1Ymxpc2hl\nZAogIHZhbHVlOiAxOTkxLTEyCmNvbnRyaWJ1dG9yOgotIG9yZ2FuaXphdGlv\nbjoKICAgIG5hbWU6CiAgICAtIGNvbnRlbnQ6IEVjbWEgSW50ZXJuYXRpb25h\nbAogIHJvbGU6CiAgLSB0eXBlOiBwdWJsaXNoZXIKZWRpdGlvbjoKICBjb250\nZW50OiAnNicKcmV2ZGF0ZTogMTk5MS0xMgpsYW5ndWFnZToKLSBlbgpzY3Jp\ncHQ6Ci0gTGF0bgphYnN0cmFjdDoKLSBjb250ZW50OiB8LQogICAgVGhpcyBF\nY21hIFN0YW5kYXJkIHNwZWNpZmllcyBhIHNldCBvZiAxMjggY2hhcmFjdGVy\ncywgKGNvbnRyb2wgY2hhcmFjdGVycyBhbmQgZ3JhcGhpYyBjaGFyYWN0ZXJz\nIHN1Y2ggYXMgbGV0dGVycywgZGlnaXRzIGFuZCBzeW1ib2xzKSB3aXRoIHRo\nZWlyIGNvZGVkIHJlcHJlc2VudGF0aW9uLiBNb3N0IG9mIHRoZXNlIGNoYXJh\nY3RlcnMgYXJlIG1hbmRhdG9yeSBhbmQgdW5jaGFuZ2VhYmxlLCBidXQgcHJv\ndmlzaW9uIGlzIG1hZGUgZm9yIHNvbWUgZmxleGliaWxpdHkgdG8gYWNjb21t\nb2RhdGUgbmF0aW9uYWwgYW5kIG90aGVyIHJlcXVpcmVtZW50cy4KICAgIFRo\naXMgRWNtYSBTdGFuZGFyZCBzcGVjaWZpZXMgYSA3LWJpdCBjb2RlZCBjaGFy\nYWN0ZXIgc2V0IHdpdGggYSBudW1iZXIgb2Ygb3B0aW9ucy4gSXQgYWxzbyBw\ncm92aWRlcyBndWlkYW5jZSBvbiBob3cgdG8gZXhlcmNpc2UgdGhlIG9wdGlv\nbnMgdG8gZGVmaW5lIHNwZWNpZmljIG5hdGlvbmFsIHZlcnNpb25zIGFuZCBh\ncHBsaWNhdGlvbi1vcmllbnRlZCB2ZXJzaW9ucy4gRnVydGhlcm1vcmUgaXQg\nc3BlY2lmaWVzIHRoZSBJbnRlcm5hdGlvbmFsIFJlZmVyZW5jZSBWZXJzaW9u\nIChJUlYpIGluIHdoaWNoIHN1Y2ggb3B0aW9ucyBoYXZlIGJlZW4gZXhlcmNp\nc2VkLgogICAgVGhpcyBjaGFyYWN0ZXIgc2V0IGlzIHByaW1hcmlseSBpbnRl\nbmRlZCBmb3IgdGhlIGludGVyY2hhbmdlIG9mIGluZm9ybWF0aW9uIGFtb25n\nIGRhdGEgcHJvY2Vzc2luZyBzeXN0ZW1zIGFuZCBhc3NvY2lhdGVkIGVxdWlw\nbWVudCwgYW5kIHdpdGhpbiBkYXRhIGNvbW11bmljYXRpb24gc3lzdGVtcy4g\nVGhlIG5lZWQgZm9yIGdyYXBoaWMgY2hhcmFjdGVycyBhbmQgY29udHJvbCBm\ndW5jdGlvbnMgaW4gZGF0YSBwcm9jZXNzaW5nIGhhcyBhbHNvIGJlZW4gdGFr\nZW4gaW50byBhY2NvdW50IGluIGRldGVybWluaW5nIHRoaXMgY2hhcmFjdGVy\nIHNldC4KICAgIFRoaXMgY2hhcmFjdGVyIHNldCBpcyBhcHBsaWNhYmxlIHRv\nIGFscGhhYmV0cyBvZiB0aGUgTGF0aW4gc2NyaXB0LgogICAgVGhpcyBjaGFy\nYWN0ZXIgc2V0IGFsbG93cyB0aGUgdXNlIG9mIGNvbnRyb2wgY2hhcmFjdGVy\ncyBmb3IgY29kZSBleHRlbnNpb24gd2hlcmUgaXRzIGNoYXJhY3RlciBzZXQg\naXMgaW5zdWZmaWNpZW50IGZvciBwYXJ0aWN1bGFyIGFwcGxpY2F0aW9ucy4g\nUHJvY2VkdXJlcyBmb3IgdGhlIHVzZSBvZiB0aGVzZSBjb250cm9sIGNoYXJh\nY3RlcnMgYXJlIHNwZWNpZmllZCBpbiBTdGFuZGFyZCBFQ01BLTM1LgogICAg\nVGhlIGRlZmluaXRpb25zIG9mIHRoZSBjb250cm9sIGNoYXJhY3RlcnMgbWVu\ndGlvbmVkIGluIHRoaXMgRWNtYSBTdGFuZGFyZCBhcmUgc3BlY2lmaWVkIGlu\nIFN0YW5kYXJkIEVDTUEtNDguIEl0IGlzIGFzc3VtZWQgdGhhdCBkYXRhIGFz\nc29jaWF0ZWQgd2l0aCB0aGVtIGFyZSB0byBiZSBwcm9jZXNzZWQgc2VyaWFs\nbHkgaW4gYSBmb3J3YXJkIGRpcmVjdGlvbi4gV2hlbiB0aGV5IGFyZSBpbmNs\ndWRlZCBpbiBzdHJpbmdzIG9mIGRhdGEgd2hpY2ggYXJlIHByb2Nlc3NlZCBv\ndGhlciB0aGFuIHNlcmlhbGx5IGluIGEgZm9yd2FyZCBkaXJlY3Rpb24gb3Ig\nd2hlbiB0aGV5IGFyZSBpbmNsdWRlZCBpbiBkYXRhIGZvcm1hdHRlZCBmb3Ig\nZml4ZWQtcmVjb3JkIHByb2Nlc3NpbmcgdGhleSBtYXkgaGF2ZSB1bmRlc2ly\nYWJsZSBlZmZlY3RzIG9yIG1heSByZXF1aXJlIGFkZGl0aW9uYWwgc3BlY2lh\nbCB0cmVhdG1lbnQgdG8gZW5zdXJlIHRoYXQgdGhleSByZXN1bHQgaW4gdGhl\naXIgZGVzaXJlZCBmdW5jdGlvbi4KICBsYW5ndWFnZToKICAtIGVuCiAgc2Ny\naXB0OgogIC0gTGF0bgogIGZvcm1hdDogdGV4dC9wbGFpbgpyZWxhdGlvbjoK\nLSB0eXBlOiB1cGRhdGVzCiAgYmliaXRlbToKICAgIGlkOiBFQ01BLTYKICAg\nIGRvY2lkOgogICAgLSBpZDogRUNNQS02CiAgICAgIHR5cGU6IEVDTUEKICAg\nICAgcHJpbWFyeTogdHJ1ZQogICAgZGF0ZToKICAgIC0gdHlwZTogcHVibGlz\naGVkCiAgICAgIHZhbHVlOiAxOTY1LTA0CiAgICBlZGl0aW9uOgogICAgICBj\nb250ZW50OiAnMScKICAgIHJldmRhdGU6IDE5NjUtMDQKICAgIGZvcm1hdHRl\nZHJlZjoKICAgICAgY29udGVudDogRUNNQS02CiAgICAgIGxhbmd1YWdlOgog\nICAgICAtIGVuCiAgICAgIHNjcmlwdDoKICAgICAgLSBMYXRuCiAgICAgIGZv\ncm1hdDogdGV4dC9wbGFpbgotIHR5cGU6IHVwZGF0ZXMKICBiaWJpdGVtOgog\nICAgaWQ6IEVDTUEtNgogICAgZG9jaWQ6CiAgICAtIGlkOiBFQ01BLTYKICAg\nICAgdHlwZTogRUNNQQogICAgICBwcmltYXJ5OiB0cnVlCiAgICBkYXRlOgog\nICAgLSB0eXBlOiBwdWJsaXNoZWQKICAgICAgdmFsdWU6IDE5ODctMDYKICAg\nIGVkaXRpb246CiAgICAgIGNvbnRlbnQ6ICcyJwogICAgcmV2ZGF0ZTogMTk4\nNy0wNgogICAgZm9ybWF0dGVkcmVmOgogICAgICBjb250ZW50OiBFQ01BLTYK\nICAgICAgbGFuZ3VhZ2U6CiAgICAgIC0gZW4KICAgICAgc2NyaXB0OgogICAg\nICAtIExhdG4KICAgICAgZm9ybWF0OiB0ZXh0L3BsYWluCi0gdHlwZTogdXBk\nYXRlcwogIGJpYml0ZW06CiAgICBpZDogRUNNQS02CiAgICBkb2NpZDoKICAg\nIC0gaWQ6IEVDTUEtNgogICAgICB0eXBlOiBFQ01BCiAgICAgIHByaW1hcnk6\nIHRydWUKICAgIGRhdGU6CiAgICAtIHR5cGU6IHB1Ymxpc2hlZAogICAgICB2\nYWx1ZTogMTk3MC0wNwogICAgZWRpdGlvbjoKICAgICAgY29udGVudDogJzMn\nCiAgICByZXZkYXRlOiAxOTcwLTA3CiAgICBmb3JtYXR0ZWRyZWY6CiAgICAg\nIGNvbnRlbnQ6IEVDTUEtNgogICAgICBsYW5ndWFnZToKICAgICAgLSBlbgog\nICAgICBzY3JpcHQ6CiAgICAgIC0gTGF0bgogICAgICBmb3JtYXQ6IHRleHQv\ncGxhaW4KLSB0eXBlOiB1cGRhdGVzCiAgYmliaXRlbToKICAgIGlkOiBFQ01B\nLTYKICAgIGxpbms6CiAgICAtIGNvbnRlbnQ6IGh0dHBzOi8vd3d3LmVjbWEt\naW50ZXJuYXRpb25hbC5vcmcvd3AtY29udGVudC91cGxvYWRzL0VDTUEtNl80\ndGhfZWRpdGlvbl9hdWd1c3RfMTk3My5wZGYKICAgICAgdHlwZTogcGRmCiAg\nICBkb2NpZDoKICAgIC0gaWQ6IEVDTUEtNgogICAgICB0eXBlOiBFQ01BCiAg\nICAgIHByaW1hcnk6IHRydWUKICAgIGRhdGU6CiAgICAtIHR5cGU6IHB1Ymxp\nc2hlZAogICAgICB2YWx1ZTogMTk3My0wOAogICAgZWRpdGlvbjoKICAgICAg\nY29udGVudDogJzQnCiAgICByZXZkYXRlOiAxOTczLTA4CiAgICBmb3JtYXR0\nZWRyZWY6CiAgICAgIGNvbnRlbnQ6IEVDTUEtNgogICAgICBsYW5ndWFnZToK\nICAgICAgLSBlbgogICAgICBzY3JpcHQ6CiAgICAgIC0gTGF0bgogICAgICBm\nb3JtYXQ6IHRleHQvcGxhaW4KLSB0eXBlOiB1cGRhdGVzCiAgYmliaXRlbToK\nICAgIGlkOiBFQ01BLTYKICAgIGxpbms6CiAgICAtIGNvbnRlbnQ6IGh0dHBz\nOi8vd3d3LmVjbWEtaW50ZXJuYXRpb25hbC5vcmcvd3AtY29udGVudC91cGxv\nYWRzL0VDTUEtNl81dGhfZWRpdGlvbl9tYXJjaF8xOTg1LnBkZgogICAgICB0\neXBlOiBwZGYKICAgIGRvY2lkOgogICAgLSBpZDogRUNNQS02CiAgICAgIHR5\ncGU6IEVDTUEKICAgICAgcHJpbWFyeTogdHJ1ZQogICAgZGF0ZToKICAgIC0g\ndHlwZTogcHVibGlzaGVkCiAgICAgIHZhbHVlOiAxOTg1LTAzCiAgICBlZGl0\naW9uOgogICAgICBjb250ZW50OiAnNScKICAgIHJldmRhdGU6IDE5ODUtMDMK\nICAgIGZvcm1hdHRlZHJlZjoKICAgICAgY29udGVudDogRUNNQS02CiAgICAg\nIGxhbmd1YWdlOgogICAgICAtIGVuCiAgICAgIHNjcmlwdDoKICAgICAgLSBM\nYXRuCiAgICAgIGZvcm1hdDogdGV4dC9wbGFpbgpwbGFjZToKLSBHZW5ldmEK\nZG9jdHlwZTogZG9jdW1lbnQKZXh0OgogIHNjaGVtYS12ZXJzaW9uOiB2MS4w\nLjAK\n"
         }
       },
-      "recorded_at": "Tue, 06 Jun 2023 14:23:07 GMT"
+      "recorded_at": "Tue, 13 Jun 2023 20:18:04 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"

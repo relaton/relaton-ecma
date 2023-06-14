@@ -6,7 +6,7 @@
         "uri": "https://raw.githubusercontent.com/relaton/relaton-data-ecma/master/data/ECMA_MEM_2021.yaml",
         "body": {
           "encoding": "US-ASCII",
-          "string": ""
+          "base64_string": ""
         },
         "headers": {
           "Accept-Encoding": [
@@ -57,19 +57,19 @@
             "1; mode=block"
           ],
           "X-Github-Request-Id": [
-            "73D6:64F7:111CEE1:146BA35:647F414B"
+            "53B4:938A:7ECB39:969F44:6488CEFC"
           ],
           "Accept-Ranges": [
             "bytes"
           ],
           "Date": [
-            "Tue, 06 Jun 2023 14:23:07 GMT"
+            "Tue, 13 Jun 2023 20:18:04 GMT"
           ],
           "Via": [
             "1.1 varnish"
           ],
           "X-Served-By": [
-            "cache-atl18428-ATL"
+            "cache-atl18438-ATL"
           ],
           "X-Cache": [
             "MISS"
@@ -78,7 +78,7 @@
             "0"
           ],
           "X-Timer": [
-            "S1686061387.234346,VS0,VE99"
+            "S1686687484.421985,VS0,VE97"
           ],
           "Vary": [
             "Authorization,Accept-Encoding,Origin"
@@ -86,11 +86,14 @@
           "Access-Control-Allow-Origin": [
             "*"
           ],
+          "Cross-Origin-Resource-Policy": [
+            "cross-origin"
+          ],
           "X-Fastly-Request-Id": [
-            "197a93b5eaf1243f2500a754854c84b8e0b7132b"
+            "96db22d3ec66577ed992632cc97b0d4c62f67c03"
           ],
           "Expires": [
-            "Tue, 06 Jun 2023 14:28:07 GMT"
+            "Tue, 13 Jun 2023 20:23:04 GMT"
           ],
           "Source-Age": [
             "0"
@@ -98,10 +101,10 @@
         },
         "body": {
           "encoding": "ASCII-8BIT",
-          "string": "---\nschema-version: v1.2.3\nid: ECMAMEM-2021\ntitle:\n- content: '\"Memento 2021\" for year 2021'\n  language:\n  - en\n  script:\n  - Latn\n  format: text/plain\nlink:\n- content: https://www.ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf\n  type: pdf\ntype: standard\ndocid:\n- id: ECMA MEM/2021\n  type: ECMA\n  primary: true\ndate:\n- type: published\n  value: 2021-01\ncontributor:\n- organization:\n    name:\n    - content: Ecma International\n  role:\n  - type: publisher\nrevdate: 2021-01\nlanguage:\n- en\nscript:\n- Latn\nplace:\n- Geneva\ndoctype: document\next:\n  schema-version: v1.0.0\n"
+          "base64_string": "LS0tCnNjaGVtYS12ZXJzaW9uOiB2MS4yLjMKaWQ6IEVDTUFNRU0tMjAyMQp0\naXRsZToKLSBjb250ZW50OiAnIk1lbWVudG8gMjAyMSIgZm9yIHllYXIgMjAy\nMScKICBsYW5ndWFnZToKICAtIGVuCiAgc2NyaXB0OgogIC0gTGF0bgogIGZv\ncm1hdDogdGV4dC9wbGFpbgpsaW5rOgotIGNvbnRlbnQ6IGh0dHBzOi8vd3d3\nLmVjbWEtaW50ZXJuYXRpb25hbC5vcmcvd3AtY29udGVudC91cGxvYWRzL0Vj\nbWEtbWVtZW50by0yMDIxLXB1YmxpYy5wZGYKICB0eXBlOiBwZGYKdHlwZTog\nc3RhbmRhcmQKZG9jaWQ6Ci0gaWQ6IEVDTUEgTUVNLzIwMjEKICB0eXBlOiBF\nQ01BCiAgcHJpbWFyeTogdHJ1ZQpkYXRlOgotIHR5cGU6IHB1Ymxpc2hlZAog\nIHZhbHVlOiAyMDIxLTAxCmNvbnRyaWJ1dG9yOgotIG9yZ2FuaXphdGlvbjoK\nICAgIG5hbWU6CiAgICAtIGNvbnRlbnQ6IEVjbWEgSW50ZXJuYXRpb25hbAog\nIHJvbGU6CiAgLSB0eXBlOiBwdWJsaXNoZXIKcmV2ZGF0ZTogMjAyMS0wMQps\nYW5ndWFnZToKLSBlbgpzY3JpcHQ6Ci0gTGF0bgpwbGFjZToKLSBHZW5ldmEK\nZG9jdHlwZTogZG9jdW1lbnQKZXh0OgogIHNjaGVtYS12ZXJzaW9uOiB2MS4w\nLjAK\n"
         }
       },
-      "recorded_at": "Tue, 06 Jun 2023 14:23:07 GMT"
+      "recorded_at": "Tue, 13 Jun 2023 20:18:04 GMT"
     }
   ],
   "recorded_with": "VCR 6.1.0"
