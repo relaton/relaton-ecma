@@ -1,3 +1,3 @@
 module RelatonEcma
-  VERSION = "1.14.6".freeze
+  VERSION = "1.16.0".freeze
 end

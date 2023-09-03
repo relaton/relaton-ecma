@@ -147,7 +147,7 @@ module RelatonEcma
     # @return [Array<RelatonBib::FormattedString>]
     def fetch_abstract
       content = @doc.xpath('//div[@class="ecma-item-content"]/p').map do |a|
-        a.text.strip.squeeze(" ").gsub(/\r\n/, "")
+        a.text.strip.squeeze(" ").gsub("\r\n", "")
       end.join "\n"
       return [] if content.empty?
 
@@ -164,7 +164,7 @@ module RelatonEcma
 
     # @return [Array<Hash>]
     def fetch_relation # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
-      @doc.xpath("//ul[@class='ecma-item-archives']/li").map do |rel|
+      @doc.xpath("//ul[@class='ecma-item-archives']/li").filter_map do |rel|
         ref, ed, date, vol = edition_id_parts rel.at("span").text
         next if ed.nil? || ed.empty?
 
@@ -178,7 +178,7 @@ module RelatonEcma
           link: link, extent: extent
         )
         { type: "updates", bibitem: bibitem }
-      end.compact
+      end
     end
 
     #
