@@ -40,14 +40,14 @@ module RelatonEcma
       # @param opts [Hash] not used
       # @return [RelatonEcma::BibliographicItem] Relaton of reference
       def get(code, _year = nil, _opts = {})
-        warn "[relaton-ecma] (\"#{code}\") fetching..."
+        Util.warn "(#{code}) fetching..."
         result = fetch_doc(code)
         if result
-          warn "[relaton-ecma] (\"#{code}\") found #{result.docidentifier.first.id}"
+          Util.warn "(#{code}) found `#{result.docidentifier.first.id}`"
           # item
         else
-          warn "[relaton-ecma] WARNING no match found online for #{code}. " \
-               "The code must be exactly like it is on the standards website."
+          Util.warn "(#{code}) WARNING no match found online for `#{code}`. " \
+                    "The code must be exactly like it is on the standards website."
         end
         result
       end
