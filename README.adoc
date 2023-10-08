@@ -61,22 +61,22 @@ ECMA mementos have the following reference structure: `ECMA MEM/{YEAR}`. Where: 
 ----
 # fetch ECMA standard
 item = RelatonEcma::EcmaBibliography.get 'ECMA-6'
-[relaton-ecma] (ECMA-6) fetching...
-[relaton-ecma] (ECMA-6) found `ECMA-6`
+[relaton-ecma] (ECMA-6) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA-6) Found: `ECMA-6`
 #<RelatonEcma::BibliographicItem:0x00007fc645b11c10
 ...
 
 # fetch ECMA standard with edition and volume
 RelatonEcma::EcmaBibliography.get "ECMA-269 ed3 vol2"
-[relaton-ecma] (ECMA-269 ed3 vol2) fetching...
-[relaton-ecma] (ECMA-269 ed3 vol2) found `ECMA-269`
+[relaton-ecma] (ECMA-269 ed3 vol2) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA-269 ed3 vol2) Found: `ECMA-269`
 => #<RelatonEcma::BibliographicItem:0x0000000106ac8210
 ...
 
 # fetch the last edition of ECMA standard
 bib = RelatonEcma::EcmaBibliography.get "ECMA-269"
-[relaton-ecma] (ECMA-269) fetching...
-[relaton-ecma] (ECMA-269) found `ECMA-269`
+[relaton-ecma] (ECMA-269) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA-269) Found: `ECMA-269`
 => #<RelatonEcma::BibliographicItem:0x000000010a408480
 ...
 
@@ -85,8 +85,8 @@ bib.edition.content
 
 # fetch the first volume of ECMA standard
 bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3"
-[relaton-ecma] (ECMA-269 ed3) fetching...
-[relaton-ecma] (ECMA-269 ed3) found `ECMA-269`
+[relaton-ecma] (ECMA-269 ed3) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA-269 ed3) Found: `ECMA-269`
 => #<RelatonEcma::BibliographicItem:0x000000010a3ed0e0
 ...
 
@@ -95,22 +95,22 @@ bib.extent.first.reference_from
 
 # fetch ECMA technical report
 RelatonEcma::EcmaBibliography.get 'ECMA TR/18'
-[relaton-ecma] (ECMA TR/18) fetching...
-[relaton-ecma] (ECMA TR/18) found `ECMA TR/18`
+[relaton-ecma] (ECMA TR/18) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA TR/18) Found: `ECMA TR/18`
 => #<RelatonEcma::BibliographicItem:0x00007fc645c00cc0
 ...
 
 # fetch ECMA memento
 RelatonEcma::EcmaBibliography.get "ECMA MEM/2021"
-[relaton-ecma] (ECMA MEM/2021) fetching...
-[relaton-ecma] (ECMA MEM/2021) found `ECMA MEM/2021`
+[relaton-ecma] (ECMA MEM/2021) Fetching from Relaton repository ...
+[relaton-ecma] (ECMA MEM/2021) Found: `ECMA MEM/2021`
 => #<RelatonEcma::BibliographicItem:0x00007fc665b2f060
 ...
 
 # Return nil if a document doesn't exist.
 RelatonEcma::EcmaBibliography.get '1111'
-[relaton-ecma] (1111) fetching...
-[relaton-ecma] WARNING no match found online for `1111`. The code must be exactly like it is on the standards website.
+[relaton-ecma] (1111) Fetching from Relaton repository ...
+[relaton-ecma] (1111) Not found.
 => nil
 ----
 

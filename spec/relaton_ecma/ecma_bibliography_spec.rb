@@ -16,7 +16,7 @@ describe RelatonEcma::EcmaBibliography do
     expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new "Not found", exception_io
     expect do
       expect(described_class.get("ECMA-6")).to be_nil
-    end.to output(/no match found online for `ECMA-6`/).to_stderr
+    end.to output(/\[relaton-ecma\] \(ECMA-6\) Not found\./).to_stderr
   end
 
   context "search" do
