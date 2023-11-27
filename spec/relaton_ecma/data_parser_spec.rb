@@ -29,9 +29,10 @@ describe RelatonEcma::DataParser do
       expect(subject).to receive(:fetch_relation).and_return :relation
       expect(subject).to receive(:fetch_edition).and_return :edition
       expect(subject).to receive(:parse_editions).and_return []
+      expect(subject).to receive(:fetch_doctype).and_return(:doctype).twice
       expect(RelatonEcma::BibliographicItem).to receive(:new).with(
         type: "standard", language: ["en"], script: ["Latn"], contributor: :contributor,
-        place: ["Geneva"], doctype: "document", docid: :docid, link: :link, title: :title,
+        place: ["Geneva"], doctype: :doctype, docid: :docid, link: :link, title: :title,
         abstract: :abstract, date: :date, relation: :relation, edition: :edition
       ).and_return :item
 
@@ -46,9 +47,10 @@ describe RelatonEcma::DataParser do
       expect(subject).to receive(:fetch_mem_title).and_return :title
       expect(subject).to receive(:fetch_mem_date).and_return :date
       expect(subject).to receive(:fetch_mem_link).and_return :link
+      expect(subject).to receive(:fetch_mem_doctype).and_return :doctype
       expect(RelatonEcma::BibliographicItem).to receive(:new).with(
         type: "standard", language: ["en"], script: ["Latn"],
-        contributor: :contributor, place: ["Geneva"], doctype: "document",
+        contributor: :contributor, place: ["Geneva"], doctype: :doctype,
         docid: :docid, link: :link, title: :title, date: :date
       ).and_return :item
 
@@ -463,5 +465,11 @@ describe RelatonEcma::DataParser do
       expect(link.first.type).to eq "pdf"
       expect(link.first.content.to_s).to eq "https://www.ecma-international.org/wp-content/uploads/ECMA-254_1st_edition_december_1996.pdf"
     end
+  end
+
+  it "#fetch_doctype" do
+    doctype = subject.fetch_doctype
+    expect(doctype).to be_instance_of RelatonBib::DocumentType
+    expect(doctype.type).to eq "document"
   end
 end

@@ -1,8 +1,8 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-04-26</fetched>
+<bibdata type="standard" schema-version="v1.2.5">
+  <fetched>2023-11-08</fetched>
   <title format="text/plain" language="en" script="Latn">The meaning of conformance to standards</title>
-  <uri type="src">https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18-duplique/</uri>
-  <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA_TR-18_1st_edition_september_1983.pdf</uri>
+  <uri type="src">https://ecma-international.org/publications-and-standards/technical-reports/ecma-tr-18-duplique/</uri>
+  <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA_TR-18_1st_edition_september_1983.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA TR/18</docidentifier>
   <date type="published">
     <on>1983-09</on>

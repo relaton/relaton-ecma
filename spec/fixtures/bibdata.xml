@@ -1,8 +1,8 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-04-26</fetched>
+<bibdata type="standard" schema-version="v1.2.5">
+  <fetched>2023-11-08</fetched>
   <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
-  <uri type="src">https://www.ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
-  <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
+  <uri type="src">https://ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
+  <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
   <date type="published">
     <on>1991-12</on>
@@ -55,7 +55,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
-      <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
+      <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
         <on>1973-08</on>
@@ -66,7 +66,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   <relation type="updates">
     <bibitem>
       <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
-      <uri type="pdf">https://www.ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
+      <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
         <on>1985-03</on>

@@ -1,7 +1,7 @@
 module RelatonEcma
   class DataParser
-    MATTRS = %i[docid title date link].freeze
-    ATTRS = MATTRS + %i[abstract relation edition].freeze
+    MATTRS = %i[docid title date link doctype].freeze
+    ATTRS = MATTRS + %i[abstract relation edition doctype].freeze
 
     #
     # Initialize parser
@@ -11,7 +11,7 @@ module RelatonEcma
     def initialize(hit)
       @hit = hit
       @bib = {
-        type: "standard", language: ["en"], script: ["Latn"], place: ["Geneva"], doctype: "document"
+        type: "standard", language: ["en"], script: ["Latn"], place: ["Geneva"]
       }
       @agent = Mechanize.new
     end
@@ -211,5 +211,11 @@ module RelatonEcma
       content = "\"Memento #{year}\" for year #{year}"
       [{ content: content, language: "en", script: "Latn" }]
     end
+
+    def fetch_doctype
+      RelatonBib::DocumentType.new type: "document"
+    end
+
+    alias_method :fetch_mem_doctype, :fetch_doctype
   end
 end
