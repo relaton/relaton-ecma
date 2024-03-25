@@ -42,7 +42,7 @@ module RelatonEcma
         doc = @agent.get url
         return doc
       rescue StandardError => e
-        warn e.message
+        Util.error e.message
       end
     end
 

@@ -1,6 +1,4 @@
 RSpec.describe RelatonEcma do
-  before { RelatonEcma.instance_variable_set :@configuration, nil }
-
   it "has a version number" do
     expect(RelatonEcma::VERSION).not_to be nil
   end
@@ -28,10 +26,10 @@ RSpec.describe RelatonEcma do
           schema = Jing.new "grammars/relaton-ecma-compile.rng"
           errors = schema.validate bibdata_file
           expect(errors).to eq []
-        end.to output(%r{
-          \[relaton-ecma\]\s\(ECMA-6\)\sFetching\sfrom\sRelaton\srepository\s\.\.\.\n
-          \[relaton-ecma\]\s\(ECMA-6\)\sFound:\s`ECMA-6`
-        }x).to_stderr
+        end.to output(include(
+          "[relaton-ecma] INFO: (ECMA-6) Fetching from Relaton repository ...",
+          "[relaton-ecma] INFO: (ECMA-6) Found: `ECMA-6`",
+        )).to_stderr_from_any_process
       end
     end
 

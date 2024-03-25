@@ -1,6 +1,4 @@
 describe RelatonEcma::EcmaBibliography do
-  before { RelatonEcma.instance_variable_set :@configuration, nil }
-
   it "raise HTTP Request Timeout error" do
     exception_io = double "io"
     expect(exception_io).to receive(:status).and_return ["408", "Request Timeout"]
@@ -16,7 +14,7 @@ describe RelatonEcma::EcmaBibliography do
     expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new "Not found", exception_io
     expect do
       expect(described_class.get("ECMA-6")).to be_nil
-    end.to output(/\[relaton-ecma\] \(ECMA-6\) Not found\./).to_stderr
+    end.to output(/\[relaton-ecma\] INFO: \(ECMA-6\) Not found\./).to_stderr_from_any_process
   end
 
   context "search" do
