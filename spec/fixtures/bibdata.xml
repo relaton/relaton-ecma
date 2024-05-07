@@ -1,6 +1,6 @@
-<bibdata type="standard" schema-version="v1.2.8">
+<bibdata type="standard" schema-version="v1.3.0">
   <fetched>2023-11-08</fetched>
-  <title format="text/plain" language="en" script="Latn">7-bit coded character set</title>
+  <title language="en" script="Latn">7-bit coded character set</title>
   <uri type="src">https://ecma-international.org/publications-and-standards/standards/ecma-6/</uri>
   <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_6th_edition_december_1991.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
@@ -16,7 +16,7 @@
   <edition>6</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This Ecma Standard specifies a set of 128 characters, (control characters and graphic characters such as letters, digits and symbols) with their coded representation. Most of these characters are mandatory and unchangeable, but provision is made for some flexibility to accommodate national and other requirements.
+  <abstract language="en" script="Latn">This Ecma Standard specifies a set of 128 characters, (control characters and graphic characters such as letters, digits and symbols) with their coded representation. Most of these characters are mandatory and unchangeable, but provision is made for some flexibility to accommodate national and other requirements.
 This Ecma Standard specifies a 7-bit coded character set with a number of options. It also provides guidance on how to exercise the options to define specific national versions and application-oriented versions. Furthermore it specifies the International Reference Version (IRV) in which such options have been exercised.
 This character set is primarily intended for the interchange of information among data processing systems and associated equipment, and within data communication systems. The need for graphic characters and control functions in data processing has also been taken into account in determining this character set.
 This character set is applicable to alphabets of the Latin script.
@@ -24,7 +24,7 @@ This character set allows the use of control characters for code extension where
 The definitions of the control characters mentioned in this Ecma Standard are specified in Standard ECMA-48. It is assumed that data associated with them are to be processed serially in a forward direction. When they are included in strings of data which are processed other than serially in a forward direction or when they are included in data formatted for fixed-record processing they may have undesirable effects or may require additional special treatment to ensure that they result in their desired function.</abstract>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <formattedref>ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
         <on>1965-04</on>
@@ -34,7 +34,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <formattedref>ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
         <on>1987-06</on>
@@ -44,7 +44,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <formattedref>ECMA-6</formattedref>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
         <on>1970-07</on>
@@ -54,7 +54,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <formattedref>ECMA-6</formattedref>
       <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_4th_edition_august_1973.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
@@ -65,7 +65,7 @@ The definitions of the control characters mentioned in this Ecma Standard are sp
   </relation>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">ECMA-6</formattedref>
+      <formattedref>ECMA-6</formattedref>
       <uri type="pdf">https://ecma-international.org/wp-content/uploads/ECMA-6_5th_edition_march_1985.pdf</uri>
       <docidentifier type="ECMA" primary="true">ECMA-6</docidentifier>
       <date type="published">
