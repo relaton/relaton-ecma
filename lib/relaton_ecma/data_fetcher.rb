@@ -28,7 +28,7 @@ module RelatonEcma
       id += "-#{extent.reference_from}" if extent
       file = "#{@output}/#{id}.#{@ext}"
       if @files.include? file
-        warn "Duplicate file #{file}"
+        Util.warn "Duplicate file #{file}"
       else
         @files << file
         File.write file, render_doc(bib), encoding: "UTF-8"
@@ -68,8 +68,7 @@ module RelatonEcma
         # workers << hit
         parse_page(hit)
       rescue StandardError => e
-        warn e.message
-        warn e.backtrace
+        Util.error { "#{e.message}\n#{e.backtrace}" }
       end
     end
 

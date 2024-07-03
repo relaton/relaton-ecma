@@ -67,7 +67,7 @@ describe RelatonEcma::DataFetcher do
     it "error" do
       expect(subject).to receive(:parse_page).and_raise StandardError, "error"
       expect(subject).to receive(:parse_page)
-      expect { subject.html_index "standards" }.to output(/error/).to_stderr
+      expect { subject.html_index "standards" }.to output(/error/).to_stderr_from_any_process
     end
   end
 
@@ -119,7 +119,7 @@ describe RelatonEcma::DataFetcher do
       expect(File).not_to receive(:write).with("data/ECMA_TR_27-1_2-1.yaml", :yaml, encoding: "UTF-8")
       expect do
         subject.write_file bib
-      end.to output(/Duplicate file data\/ECMA_TR_27-1_2-1.yaml/).to_stderr
+      end.to output(/Duplicate file data\/ECMA_TR_27-1_2-1.yaml/).to_stderr_from_any_process
     end
   end
 end

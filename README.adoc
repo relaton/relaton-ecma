@@ -29,20 +29,6 @@ Or install it yourself as:
 
 == Usage
 
-=== Configuration
-
-Configuration is optional. The available option is `logger` which is a `Logger` instance. By default, the logger is `Logger.new($stderr)` with `Logger::WARN` level. To change the logger level, use `RelatonEcma.configure` block.
-
-[source,ruby]
-----
-require 'relaton_ecma'
-=> true
-
-RelatonEcma.configure do |config|
-  config.logger.level = Logger::DEBUG
-end
-----
-
 === Fetch documents
 
 Documents can be fetched by reference. The structure of the reference depends on the type of the document. There are three types of documents:
@@ -59,6 +45,9 @@ ECMA mementos have the following reference structure: `ECMA MEM/{YEAR}`. Where: 
 
 [source,ruby]
 ----
+require 'relaton_ecma'
+=> true
+
 # fetch ECMA standard
 item = RelatonEcma::EcmaBibliography.get 'ECMA-6'
 [relaton-ecma] (ECMA-6) Fetching from Relaton repository ...
@@ -184,6 +173,10 @@ Stopped at: 2022-06-23 09:36:58 +0200
 Done in: 752 sec.
 => nil
 ----
+
+=== Logging
+
+RelatonEcma uses the relaton-logger gem for logging. By default, it logs to STDOUT. To change the log levels and add other loggers, read the https://github.com/relaton/relaton-logger#usage[relaton-logger] documentation.
 
 == Development
 

@@ -73,7 +73,7 @@ describe RelatonEcma::DataParser do
 
       expect do
         expect(subject.get_page(:url)).to eq :doc
-      end.to output(/error/).to_stderr
+      end.to output(/error/).to_stderr_from_any_process
     end
   end
 
