@@ -3,7 +3,7 @@
 module RelatonEcma
   # IETF bibliography module
   module EcmaBibliography
-    ENDPOINT = "https://raw.githubusercontent.com/relaton/relaton-data-ecma/master/"
+    ENDPOINT = "https://raw.githubusercontent.com/relaton/relaton-data-ecma/main/"
 
     class << self
       #
