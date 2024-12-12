@@ -43,7 +43,7 @@ RSpec.describe RelatonEcma do
       bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3 vol2"
       expect(bib.docidentifier.first.id).to eq "ECMA-269"
       expect(bib.edition.content).to eq "3"
-      expect(bib.extent.first.reference_from).to eq "2"
+      expect(bib.extent[0].locality[0].reference_from).to eq "2"
     end
 
     it "last edition", vcr: { cassette_name: "ecma_269" } do
@@ -56,7 +56,7 @@ RSpec.describe RelatonEcma do
       bib = RelatonEcma::EcmaBibliography.get "ECMA-269 ed3"
       expect(bib.docidentifier.first.id).to eq "ECMA-269"
       expect(bib.edition.content).to eq "3"
-      expect(bib.extent.first.reference_from).to eq "1"
+      expect(bib.extent[0].locality[0].reference_from).to eq "1"
     end
   end
 
