@@ -1,15 +1,15 @@
-require_relative "lib/relaton_ecma/version"
+require_relative "lib/relaton/ecma/version"
 
 Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.name          = "relaton-ecma"
-  spec.version       = RelatonEcma::VERSION
+  spec.version       = Relaton::Ecma::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = "RelatonIetf: retrieve ECMA Standards for bibliographic " \
+  spec.summary       = "Relaton::Ecma: retrieve ECMA Standards for bibliographic " \
                        "use using the BibliographicItem model"
   spec.description   = <<~DESCRIPTION
-    RelatonEcma: retrieve ECMA Standards for bibliographic use
+    Relaton::Ecma: retrieve ECMA Standards for bibliographic use
     using the BibliographicItem model.
   DESCRIPTION
   spec.homepage      = "https://github.com/metanorma/relaton-ecma"
@@ -28,6 +28,6 @@ Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.require_paths = ["lib"]
 
   spec.add_dependency "mechanize", "~> 2.10"
-  spec.add_dependency "relaton-bib", "~> 1.20.0"
+  spec.add_dependency "relaton-bib", "~> 2.0.0-alpha.1"
   spec.add_dependency "relaton-index", "~> 0.2.4"
 end
