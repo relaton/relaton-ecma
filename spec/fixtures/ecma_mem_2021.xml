@@ -1,6 +1,6 @@
-<bibdata type="standard" schema-version="v1.2.9">
-  <fetched>2024-06-18</fetched>
-  <title format="text/plain" language="en" script="Latn">"Memento 2021" for year 2021</title>
+<bibdata type="standard" schema-version="v1.4.1">
+  <fetched>2025-12-29</fetched>
+  <title language="en" script="Latn">"Memento 2021" for year 2021</title>
   <uri type="pdf">https://ecma-international.org/wp-content/uploads/Ecma-memento-2021-public.pdf</uri>
   <docidentifier type="ECMA" primary="true">ECMA MEM/2021</docidentifier>
   <date type="published">
@@ -9,13 +9,16 @@
   <contributor>
     <role type="publisher"/>
     <organization>
-      <name>Ecma International</name>
+      <name language="en" script="Latn">Ecma International</name>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <place>Geneva</place>
+  <place>
+    <city>Geneva</city>
+  </place>
   <ext schema-version="v1.0.0">
     <doctype>document</doctype>
+    <flavor>ecma</flavor>
   </ext>
 </bibdata>

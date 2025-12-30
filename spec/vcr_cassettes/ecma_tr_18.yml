@@ -39,31 +39,31 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 8A3A:2C887B:882289:953B75:67B55CAC
+      - F161:29EDEB:1AD6B3:207E14:6952FCB7
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 19 Feb 2025 04:23:09 GMT
+      - Mon, 29 Dec 2025 22:12:13 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100145-IAD
+      - cache-pdk-kpdk2140034-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1739938989.058498,VS0,VE120
+      - S1767046334.688925,VS0,VE78
       Vary:
-      - Authorization,Accept-Encoding,Origin
+      - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - 8fc8352015b558e76e5ac8bbfc57c344b3e37663
+      - bebc15cf9a9f527d7a1674e810e02a709dbde9b0
       Expires:
-      - Wed, 19 Feb 2025 04:28:09 GMT
+      - Mon, 29 Dec 2025 22:17:13 GMT
       Source-Age:
       - '0'
     body:
@@ -185,7 +185,7 @@ http_interactions:
         dZ2jridR1znqehJ1naOuJ2HTv4XN/wBQSwECHgMUAAAACABKcT1axFP2CrAT
         AACHzgAACgAYAAAAAAABAAAApIEAAAAAaW5kZXgueWFtbFVUBQADyzaaZ3V4
         CwABBOkDAAAEdgAAAFBLBQYAAAAAAQABAFAAAAD0EwAAAAA=
-  recorded_at: Wed, 19 Feb 2025 04:23:09 GMT
+  recorded_at: Mon, 29 Dec 2025 22:12:13 GMT
 - request:
     method: get
     uri: https://raw.githubusercontent.com/relaton/relaton-data-ecma/main/data/ECMA_TR_18-1.yaml
@@ -225,31 +225,31 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 1FBD:79F1:82C75F:8FD8D4:67B55CA3
+      - A21E:293777:175E5D:1CE56C:6952FCBD
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 19 Feb 2025 04:23:09 GMT
+      - Mon, 29 Dec 2025 22:12:13 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100121-IAD
+      - cache-pdk-kpdk2140060-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1739938989.392291,VS0,VE90
+      - S1767046334.905930,VS0,VE55
       Vary:
-      - Authorization,Accept-Encoding,Origin
+      - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - 224d4782f2d5faee00fd72349573d3bd4755f0b2
+      - b69fd5b618e4a326d2a392d7c6c4b6afb943303a
       Expires:
-      - Wed, 19 Feb 2025 04:28:09 GMT
+      - Mon, 29 Dec 2025 22:17:13 GMT
       Source-Age:
       - '0'
     body:
@@ -296,5 +296,115 @@ http_interactions:
         IGZvcm1hdDogdGV4dC9wbGFpbgpwbGFjZToKLSBHZW5ldmEKZXh0OgogIHNj
         aGVtYS12ZXJzaW9uOiB2MS4wLjAKICBkb2N0eXBlOgogICAgdHlwZTogZG9j
         dW1lbnQK
-  recorded_at: Wed, 19 Feb 2025 04:23:09 GMT
-recorded_with: VCR 6.3.1
+  recorded_at: Mon, 29 Dec 2025 22:12:13 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/relaton/relaton-data-ecma/refs/heads/data-v2/data/ECMA_TR_18-1.yaml
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1795'
+      Cache-Control:
+      - max-age=300
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Content-Type:
+      - text/plain; charset=utf-8
+      Etag:
+      - W/"fcb00c3aea25a88b451106b0b67571b74bc9a4fb825838895bc9916d2cc69047"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 7E03:305254:1910ED:1ED855:6952FDCD
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 29 Dec 2025 22:16:47 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-kpdk2140023-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1767046607.109200,VS0,VE73
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      X-Fastly-Request-Id:
+      - aacfd98b2640062a4df3481e604804422c5b8acc
+      Expires:
+      - Mon, 29 Dec 2025 22:21:47 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        LS0tCmlkOiBFQ01BVFIxOAp0eXBlOiBzdGFuZGFyZApzY2hlbWFfdmVyc2lv
+        bjogdjEuNC4xCnRpdGxlOgotIGxhbmd1YWdlOiBlbgogIHNjcmlwdDogTGF0
+        bgogIGNvbnRlbnQ6IFRoZSBtZWFuaW5nIG9mIGNvbmZvcm1hbmNlIHRvIHN0
+        YW5kYXJkcwpzb3VyY2U6Ci0gdHlwZTogc3JjCiAgY29udGVudDogaHR0cHM6
+        Ly9lY21hLWludGVybmF0aW9uYWwub3JnL3B1YmxpY2F0aW9ucy1hbmQtc3Rh
+        bmRhcmRzL3RlY2huaWNhbC1yZXBvcnRzL2VjbWEtdHItMTgvCi0gdHlwZTog
+        cGRmCiAgY29udGVudDogaHR0cHM6Ly9lY21hLWludGVybmF0aW9uYWwub3Jn
+        L3dwLWNvbnRlbnQvdXBsb2Fkcy9FQ01BX1RSLTE4XzFzdF9lZGl0aW9uX3Nl
+        cHRlbWJlcl8xOTgzLnBkZgpkb2NpZGVudGlmaWVyOgotIGNvbnRlbnQ6IEVD
+        TUEgVFIvMTgKICB0eXBlOiBFQ01BCiAgcHJpbWFyeTogdHJ1ZQpkYXRlOgot
+        IHR5cGU6IHB1Ymxpc2hlZAogIGF0OiAxOTgzLTA5CmNvbnRyaWJ1dG9yOgot
+        IHJvbGU6CiAgLSB0eXBlOiBwdWJsaXNoZXIKICBvcmdhbml6YXRpb246CiAg
+        ICBuYW1lOgogICAgLSBsYW5ndWFnZTogZW4KICAgICAgc2NyaXB0OiBMYXRu
+        CiAgICAgIGNvbnRlbnQ6IEVjbWEgSW50ZXJuYXRpb25hbAplZGl0aW9uOgog
+        IGNvbnRlbnQ6ICcxJwpsYW5ndWFnZToKLSBlbgpzY3JpcHQ6Ci0gTGF0bgph
+        YnN0cmFjdDoKLSBsYW5ndWFnZTogZW4KICBzY3JpcHQ6IExhdG4KICBjb250
+        ZW50OiB8LQogICAgRHJhZnRpbmcgY29tcHV0ZXIgc3RhbmRhcmRzIGFuZCBn
+        YWluaW5nIGludGVybmF0aW9uYWwgYWdyZWVtZW50IHRvIHRoZW0gaXMgYW4g
+        ZXhwZW5zaXZlIGFuZCB0aW1lIGNvbnN1bWluZyBwcm9jZXNzLCB0aGVyZWZv
+        cmUgRWNtYSBJbnRlcm5hdGlvbmFsIGlzIGFueGlvdXMgdG8gZW5zdXJlIHRo
+        YXQgc3RhbmRhcmRzIGFyZSBhcyB2YWx1YWJsZSB0byBhbGwgY29uY2VybmVk
+        LCB3aGV0aGVyIHN1cHBsaWVycyBvciB1c2VycywgYXMgaXQgaXMgcG9zc2li
+        bGUgdG8gbWFrZSB0aGVtLgogICAgRWNtYSBJbnRlcm5hdGlvbmFsIGFsc28g
+        YmVsaWV2ZXMgZmlybWx5IHRoYXQgdGhlIHJlYWwgdmFsdWUgb2YgY29tcHV0
+        ZXIgc3RhbmRhcmRzIGRlcGVuZHMgb24gdGhlIGV4aXN0ZW5jZSBvZiBhIGNv
+        bXByZWhlbnNpdmUgc2V0IG9mIHN1Y2ggc3RhbmRhcmRzLiBJbiBnZW5lcmFs
+        LCB0aGUgZWZmZWN0aXZlbmVzcyBvZiBhbnkgb25lIGNvbXB1dGVyIHN0YW5k
+        YXJkIGhhcyB0byBiZSBjb25zaWRlcmVkIGluIHJlbGF0aW9uIHRvIG90aGVy
+        IG1lbWJlcnMgb2YgdGhhdCBzZXQuIEl0IGZvbGxvd3MgdGhhdCBpZiBjb25m
+        b3JtYW5jZSB0byBhbnkgc3RhbmRhcmQgaXMgaW4gZG91YnQsIHRoYXQgZmFj
+        dCBjYW4gc2VyaW91c2x5IGNhbGwgaW4gcXVlc3Rpb24gdGhlIHZhbHVlIG9m
+        IGNvbmZvcm1hbmNlIHRvIG1hbnkgb3RoZXIgc3RhbmRhcmRzIHdoZXJlIG5v
+        IHN1Y2ggZG91YnQgc2hvdWxkIHJlYWxseSBleGlzdC4KICAgIFRoZXJlZm9y
+        ZSBFY21hIEludGVybmF0aW9uYWwgd2lsbCBzZWVrIHRvIGNsYXJpZnkgdGhl
+        IHBvc2l0aW9uIG92ZXIgY29uZm9ybWFuY2UgdG8gYWxsIGtpbmRzIG9mIGNv
+        bXB1dGVyIHN0YW5kYXJkcyBpbiB0aGUgaW50ZXJlc3RzIG9mIHVzZXJzLCBz
+        dXBwbGllcnMgYW5kIHRoZSBnZW5lcmFsIHB1YmxpYyBhbGlrZS4gVGhhdCBp
+        cyB0aGUgcHVycG9zZSBvZiB0aGlzIHJlcG9ydC4KcGxhY2U6Ci0gY2l0eTog
+        R2VuZXZhCmV4dDoKICBzY2hlbWFfdmVyc2lvbjogdjEuMC4wCiAgZG9jdHlw
+        ZToKICAgIGNvbnRlbnQ6IGRvY3VtZW50CiAgZmxhdm9yOiBlY21hCg==
+  recorded_at: Mon, 29 Dec 2025 22:16:47 GMT
+recorded_with: VCR 6.4.0
