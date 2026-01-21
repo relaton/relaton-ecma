@@ -1,20 +1,23 @@
 describe RelatonEcma::EcmaBibliography do
-  it "raise HTTP Request Timeout error" do
-    exception_io = double "io"
-    expect(exception_io).to receive(:status).and_return ["408", "Request Timeout"]
-    expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new "Not found", exception_io
-    expect do
-      described_class.get "ECMA-6"
-    end.to raise_error RelatonBib::RequestError
-  end
+  describe ".get" do
+    context "unsuccessful" do
+      let(:agent) { instance_double Mechanize }
+      before { expect(Mechanize).to receive(:new).and_return agent }
 
-  it "raise HTTP Not Found error" do
-    exception_io = double "io"
-    expect(exception_io).to receive(:status).and_return ["404", "Not Found"]
-    expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new "Not found", exception_io
-    expect do
-      expect(described_class.get("ECMA-6")).to be_nil
-    end.to output(/\[relaton-ecma\] INFO: \(ECMA-6\) Not found\./).to_stderr_from_any_process
+      it "raise HTTP Request Timeout error" do
+        expect(agent).to receive(:get).and_raise Timeout::Error
+        expect do
+          described_class.get "ECMA-6"
+        end.to raise_error RelatonBib::RequestError
+      end
+
+      it "raise HTTP Not Found error" do
+        expect(agent).to receive(:get).and_raise Mechanize::ResponseCodeError.new(double(code: 404), "404")
+        expect do
+          expect(described_class.get("ECMA-6")).to be_nil
+        end.to output(/\[relaton-ecma\] INFO: \(ECMA-6\) Not found\./).to_stderr_from_any_process
+      end
+    end
   end
 
   context "search" do

@@ -61,13 +61,17 @@ module RelatonEcma
         return unless row
 
         url = "#{ENDPOINT}#{row[:file]}"
-        doc = OpenURI.open_uri url
-        hash = YAML.safe_load doc
+        resp = Mechanize.new.get(url)
+        hash = YAML.safe_load resp.body
         hash["fetched"] = Date.today.to_s
         BibliographicItem.from_hash hash
-      rescue OpenURI::HTTPError => e
-        return if e.io.status.first == "404"
+      rescue Mechanize::ResponseCodeError => e
+        return if e.response_code == "404"
 
+        raise RelatonBib::RequestError, "No document found for #{code} reference. #{e.message}"
+      rescue Mechanize::RedirectLimitReachedError, Timeout::Error,
+          Mechanize::UnauthorizedError, Mechanize::UnsupportedSchemeError,
+          Mechanize::ResponseReadError, Mechanize::ChunkedTerminationError => e
         raise RelatonBib::RequestError, "No document found for #{code} reference. #{e.message}"
       end
     end
