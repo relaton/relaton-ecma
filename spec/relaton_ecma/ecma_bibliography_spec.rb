@@ -2,7 +2,12 @@ describe RelatonEcma::EcmaBibliography do
   describe ".get" do
     context "unsuccessful" do
       let(:agent) { instance_double Mechanize }
-      before { allow(Mechanize).to receive(:new).and_return agent }
+      before do
+        allow(Mechanize).to receive(:new).and_return agent
+        allow(described_class).to receive(:search).with("ECMA-6").and_return [
+          { id: { id: "ECMA-6", ed: "3", vol: "1" }, file: "ECMA-6.yaml" }
+        ]
+      end
 
       it "raise HTTP Request Timeout error" do
         expect(agent).to receive(:get).and_raise Timeout::Error
