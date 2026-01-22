@@ -62,11 +62,15 @@ module Relaton
           return unless row
 
           url = "#{ENDPOINT}#{row[:file]}"
-          doc = OpenURI.open_uri url
-          Item.from_yaml(doc).tap { |item| item.fetched = Date.today.to_s }
-        rescue OpenURI::HTTPError => e
-          return if e.io.status.first == "404"
+          resp = Mechanize.new.get(url)
+          Item.from_yaml(resp.body).tap { |item| item.fetched = Date.today.to_s }
+        rescue Mechanize::ResponseCodeError => e
+          return if e.response_code == "404"
 
+          raise Relaton::RequestError, "No document found for #{code} reference. #{e.message}"
+        rescue Mechanize::RedirectLimitReachedError, Timeout::Error,
+            Mechanize::UnauthorizedError, Mechanize::UnsupportedSchemeError,
+            Mechanize::ResponseReadError, Mechanize::ChunkedTerminationError => e
           raise Relaton::RequestError, "No document found for #{code} reference. #{e.message}"
         end
       end

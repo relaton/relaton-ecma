@@ -2,101 +2,25 @@
 http_interactions:
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/relaton/relaton-data-ecma/main/data/ECMA_MEM_2021.yaml
-    body:
-      encoding: US-ASCII
-      base64_string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '596'
-      Cache-Control:
-      - max-age=300
-      Content-Security-Policy:
-      - default-src 'none'; style-src 'unsafe-inline'; sandbox
-      Content-Type:
-      - text/plain; charset=utf-8
-      Etag:
-      - W/"c6cf18de39506a5326f82ca9a0fd3c9813167d4abf2e2fae104a1981b3c9362d"
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Github-Request-Id:
-      - 31E6:305254:18A23C:1E4682:6952FCBD
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Mon, 29 Dec 2025 22:12:14 GMT
-      Via:
-      - 1.1 varnish
-      X-Served-By:
-      - cache-pdk-kpdk2140084-PDK
-      X-Cache:
-      - MISS
-      X-Cache-Hits:
-      - '0'
-      X-Timer:
-      - S1767046334.062462,VS0,VE64
-      Vary:
-      - Authorization,Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      Cross-Origin-Resource-Policy:
-      - cross-origin
-      X-Fastly-Request-Id:
-      - 96e6b136db63e78108d283382dc91d168ec24873
-      Expires:
-      - Mon, 29 Dec 2025 22:17:14 GMT
-      Source-Age:
-      - '0'
-    body:
-      encoding: ASCII-8BIT
-      base64_string: |
-        LS0tCnNjaGVtYS12ZXJzaW9uOiB2MS4yLjkKaWQ6IEVDTUFNRU0tMjAyMQp0
-        aXRsZToKLSBjb250ZW50OiAnIk1lbWVudG8gMjAyMSIgZm9yIHllYXIgMjAy
-        MScKICBsYW5ndWFnZToKICAtIGVuCiAgc2NyaXB0OgogIC0gTGF0bgogIGZv
-        cm1hdDogdGV4dC9wbGFpbgpsaW5rOgotIGNvbnRlbnQ6IGh0dHBzOi8vZWNt
-        YS1pbnRlcm5hdGlvbmFsLm9yZy93cC1jb250ZW50L3VwbG9hZHMvRWNtYS1t
-        ZW1lbnRvLTIwMjEtcHVibGljLnBkZgogIHR5cGU6IHBkZgp0eXBlOiBzdGFu
-        ZGFyZApkb2NpZDoKLSBpZDogRUNNQSBNRU0vMjAyMQogIHR5cGU6IEVDTUEK
-        ICBwcmltYXJ5OiB0cnVlCmRhdGU6Ci0gdHlwZTogcHVibGlzaGVkCiAgdmFs
-        dWU6IDIwMjEtMDEKY29udHJpYnV0b3I6Ci0gb3JnYW5pemF0aW9uOgogICAg
-        bmFtZToKICAgIC0gY29udGVudDogRWNtYSBJbnRlcm5hdGlvbmFsCiAgcm9s
-        ZToKICAtIHR5cGU6IHB1Ymxpc2hlcgpyZXZkYXRlOiAyMDIxLTAxCmxhbmd1
-        YWdlOgotIGVuCnNjcmlwdDoKLSBMYXRuCnBsYWNlOgotIEdlbmV2YQpleHQ6
-        CiAgc2NoZW1hLXZlcnNpb246IHYxLjAuMAogIGRvY3R5cGU6CiAgICB0eXBl
-        OiBkb2N1bWVudAo=
-  recorded_at: Mon, 29 Dec 2025 22:12:14 GMT
-- request:
-    method: get
     uri: https://raw.githubusercontent.com/relaton/relaton-data-ecma/refs/heads/data-v2/data/ECMA_MEM_2021.yaml
     body:
       encoding: US-ASCII
       base64_string: ''
     headers:
       Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      - gzip,deflate,identity
       Accept:
       - "*/*"
       User-Agent:
-      - Ruby
+      - Mechanize/2.14.0 Ruby/3.4.7p58 (http://github.com/sparklemotion/mechanize/)
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - raw.githubusercontent.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
   response:
     status:
       code: 200
@@ -105,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '623'
+      - '349'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -123,21 +47,23 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 6EF3:1487D:1B88A76:21FA4D9:695301F6
+      - 6C36:3209F3:BE340:F1D28:6971A00F
+      Content-Encoding:
+      - gzip
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 29 Dec 2025 22:34:30 GMT
+      - Thu, 22 Jan 2026 03:57:06 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-pdk-kpdk2140040-PDK
+      - cache-pdk-kpdk2140080-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1767047670.226242,VS0,VE61
+      - S1769054226.027021,VS0,VE68
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
@@ -145,27 +71,21 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - b633f1bb9b5c56611badede8d28faf9754c4ebe4
+      - 285f29f653b4b93a85097726d8b8ee8bfd3bf401
       Expires:
-      - Mon, 29 Dec 2025 22:39:30 GMT
+      - Thu, 22 Jan 2026 04:02:06 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        LS0tCmlkOiBFQ01BTUVNMjAyMQp0eXBlOiBzdGFuZGFyZApzY2hlbWFfdmVy
-        c2lvbjogdjEuNC4xCnRpdGxlOgotIGxhbmd1YWdlOiBlbgogIHNjcmlwdDog
-        TGF0bgogIGNvbnRlbnQ6ICciTWVtZW50byAyMDIxIiBmb3IgeWVhciAyMDIx
-        Jwpzb3VyY2U6Ci0gdHlwZTogcGRmCiAgY29udGVudDogaHR0cHM6Ly9lY21h
-        LWludGVybmF0aW9uYWwub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy9FY21hLW1l
-        bWVudG8tMjAyMS1wdWJsaWMucGRmCmRvY2lkZW50aWZpZXI6Ci0gY29udGVu
-        dDogRUNNQSBNRU0vMjAyMQogIHR5cGU6IEVDTUEKICBwcmltYXJ5OiB0cnVl
-        CmRhdGU6Ci0gdHlwZTogcHVibGlzaGVkCiAgYXQ6IDIwMjEtMDEKY29udHJp
-        YnV0b3I6Ci0gcm9sZToKICAtIHR5cGU6IHB1Ymxpc2hlcgogIG9yZ2FuaXph
-        dGlvbjoKICAgIG5hbWU6CiAgICAtIGxhbmd1YWdlOiBlbgogICAgICBzY3Jp
-        cHQ6IExhdG4KICAgICAgY29udGVudDogRWNtYSBJbnRlcm5hdGlvbmFsCmxh
-        bmd1YWdlOgotIGVuCnNjcmlwdDoKLSBMYXRuCnBsYWNlOgotIGNpdHk6IEdl
-        bmV2YQpleHQ6CiAgc2NoZW1hX3ZlcnNpb246IHYxLjAuMAogIGRvY3R5cGU6
-        CiAgICBjb250ZW50OiBkb2N1bWVudAogIGZsYXZvcjogZWNtYQo=
-  recorded_at: Mon, 29 Dec 2025 22:34:30 GMT
+        H4sIAAAAAAAAA2VSwW7DIAy98xXWLj2RpNVO3KapmiYt3zC5QFqkBBCQbN3X
+        zyZV17WcsLHf83tGSimcUbB/7V/6fb/rdltRztEqyAW9wWRE1ic74ediU3bB
+        K1i2zXNDVa6MVgkJI/rjjEdqsV4AZJ1cLAo+sHCogy/WU7x56u1EtwBM8gRD
+        SHC2mGq4ETnMSVe8lT6a4bb7VErMqm2tnlA6SiaPhcbBsQnp2H5FeSlt5zgG
+        NLndc+W0UkrmkHE+jE43jGyCdoZe3OBsYtIrERsB5ERbrYDLNJylICY3YTor
+        KGm2wmC5HZjR88kaqkMCqpTdVjBycoe5hEqUArsGcN+WKEdK0LufKoxrADxO
+        dr09+Mznzms+f0JIP7zfOiWuCDQHYVy6Kaj9ccR1AdoVkvhmvV1Q2O+i6lYf
+        PkHXdPRATlYh4h85ZWd2nrLDiAtJB96c+AVnh3epbwIAAA==
+  recorded_at: Thu, 22 Jan 2026 03:57:06 GMT
 recorded_with: VCR 6.4.0
