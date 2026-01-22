@@ -2,7 +2,7 @@ describe RelatonEcma::EcmaBibliography do
   describe ".get" do
     context "unsuccessful" do
       let(:agent) { instance_double Mechanize }
-      before { expect(Mechanize).to receive(:new).and_return agent }
+      before { allow(Mechanize).to receive(:new).and_return agent }
 
       it "raise HTTP Request Timeout error" do
         expect(agent).to receive(:get).and_raise Timeout::Error
