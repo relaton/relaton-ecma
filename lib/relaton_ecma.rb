@@ -1,5 +1,4 @@
 require "nokogiri"
-require "open-uri"
 require "yaml"
 require "relaton/index"
 require "relaton_bib"
