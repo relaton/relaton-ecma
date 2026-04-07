@@ -8,11 +8,19 @@ http_interactions:
       base64_string: ''
     headers:
       Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      - gzip,deflate,identity
       Accept:
       - "*/*"
       User-Agent:
-      - Ruby
+      - Mechanize/2.14.0 Ruby/3.4.7p58 (http://github.com/sparklemotion/mechanize/)
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - raw.githubusercontent.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
   response:
     status:
       code: 200
@@ -21,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '596'
+      - '347'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -39,21 +47,23 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 63A6:319B56:4FC455:61A15D:6970294F
+      - 346E:26138:205A85:267A9C:69D54BD4
+      Content-Encoding:
+      - gzip
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 21 Jan 2026 01:18:08 GMT
+      - Tue, 07 Apr 2026 18:24:20 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-pdk-kpdk2140021-PDK
+      - cache-iad-kcgs7200058-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1768958288.956160,VS0,VE128
+      - S1775586261.780537,VS0,VE135
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
@@ -61,27 +71,21 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - d91c72e380b9ceb964088fcb57531b00dc3306c4
+      - c6e0d0e1b77224a08ce7b20366cc409a97ac06bb
       Expires:
-      - Wed, 21 Jan 2026 01:23:08 GMT
+      - Tue, 07 Apr 2026 18:29:20 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        LS0tCnNjaGVtYS12ZXJzaW9uOiB2MS4yLjkKaWQ6IEVDTUFNRU0tMjAyMQp0
-        aXRsZToKLSBjb250ZW50OiAnIk1lbWVudG8gMjAyMSIgZm9yIHllYXIgMjAy
-        MScKICBsYW5ndWFnZToKICAtIGVuCiAgc2NyaXB0OgogIC0gTGF0bgogIGZv
-        cm1hdDogdGV4dC9wbGFpbgpsaW5rOgotIGNvbnRlbnQ6IGh0dHBzOi8vZWNt
-        YS1pbnRlcm5hdGlvbmFsLm9yZy93cC1jb250ZW50L3VwbG9hZHMvRWNtYS1t
-        ZW1lbnRvLTIwMjEtcHVibGljLnBkZgogIHR5cGU6IHBkZgp0eXBlOiBzdGFu
-        ZGFyZApkb2NpZDoKLSBpZDogRUNNQSBNRU0vMjAyMQogIHR5cGU6IEVDTUEK
-        ICBwcmltYXJ5OiB0cnVlCmRhdGU6Ci0gdHlwZTogcHVibGlzaGVkCiAgdmFs
-        dWU6IDIwMjEtMDEKY29udHJpYnV0b3I6Ci0gb3JnYW5pemF0aW9uOgogICAg
-        bmFtZToKICAgIC0gY29udGVudDogRWNtYSBJbnRlcm5hdGlvbmFsCiAgcm9s
-        ZToKICAtIHR5cGU6IHB1Ymxpc2hlcgpyZXZkYXRlOiAyMDIxLTAxCmxhbmd1
-        YWdlOgotIGVuCnNjcmlwdDoKLSBMYXRuCnBsYWNlOgotIEdlbmV2YQpleHQ6
-        CiAgc2NoZW1hLXZlcnNpb246IHYxLjAuMAogIGRvY3R5cGU6CiAgICB0eXBl
-        OiBkb2N1bWVudAo=
-  recorded_at: Wed, 21 Jan 2026 01:18:08 GMT
+        H4sIAAAAAAAAA2VSMW7DMAzc9QoiSybZTrZ6K4qgKFA/grGYRKgsCbTsNn19
+        KdlpE3QydSJ1xztrrdXYX2hAPROPNvgW5l21r56UNS0cXrrn7tDpfbPfqWST
+        o1Zp6INP5FML201Hg1QBcsMGToHhSsjluFUADv15wrNMAWggL5+xZxvTArxj
+        ypCMDSjPJfpKdXRovXLWfzxQXVKKY1vX1ItUKyB7TCIXXRX4XH9GvbbWU3QB
+        zVgfcuew6CsL6Dgdne2raE5Cmq6RWsj1Uo0JvUE2yoReVhfumwEgDtTFgdtU
+        RuUQ2Q7IVxHOEymDqbizPpy5xgsZ6ZvRTQIVDc1OZaFsj1MKnPtFPnr7XbbJ
+        tgB4HGip7gzI68Db/eLSwcGt3j6ysmKai6Bf1r8oShC3GNYQxPW+XL2SpxmV
+        JNGWsP79Gk3VyIWYVBiLyoVboCmbrX4AaZw31VQCAAA=
+  recorded_at: Tue, 07 Apr 2026 18:24:20 GMT
 recorded_with: VCR 6.4.0
