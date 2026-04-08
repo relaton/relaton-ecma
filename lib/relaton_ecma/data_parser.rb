@@ -11,7 +11,7 @@ module RelatonEcma
     def initialize(hit)
       @hit = hit
       @bib = {
-        type: "standard", language: ["en"], script: ["Latn"], place: ["Geneva"]
+        type: "standard", language: ["en"], script: ["Latn"], place: [RelatonBib::Place.new(city: "Geneva")]
       }
       @agent = Mechanize.new
     end

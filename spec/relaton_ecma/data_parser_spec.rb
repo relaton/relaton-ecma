@@ -14,47 +14,69 @@ describe RelatonEcma::DataParser do
   end
 
   context "#parse" do
-    before do
-      expect(subject).to receive(:contributor).and_return :contributor
-    end
-
     it "with href" do
-      expect(hit).to receive(:[]).with(:href).and_return("href").twice
-      expect(subject).to receive(:get_page).with("href").and_return :doc
-      expect(subject).to receive(:fetch_docid).with(no_args).and_return :docid
-      expect(subject).to receive(:fetch_title).and_return :title
-      expect(subject).to receive(:fetch_abstract).and_return :abstract
-      expect(subject).to receive(:fetch_date).and_return :date
-      expect(subject).to receive(:fetch_link).and_return :link
-      expect(subject).to receive(:fetch_relation).and_return :relation
-      expect(subject).to receive(:fetch_edition).and_return :edition
-      expect(subject).to receive(:parse_editions).and_return []
-      expect(subject).to receive(:fetch_doctype).and_return(:doctype).twice
-      expect(RelatonEcma::BibliographicItem).to receive(:new).with(
-        type: "standard", language: ["en"], script: ["Latn"], contributor: :contributor,
-        place: ["Geneva"], doctype: :doctype, docid: :docid, link: :link, title: :title,
-        abstract: :abstract, date: :date, relation: :relation, edition: :edition
-      ).and_return :item
+      hit = Nokogiri::HTML('<a href="https://example.com/ecma-6">ECMA-6</a>').at("a")
+      doc = Nokogiri::HTML <<~HTML
+        <html>
+          <body>
+            <p class="ecma-item-short-description">ECMAScript Language Specification</p>
+            <div class="ecma-item-content"><p>Test abstract</p></div>
+            <p class="ecma-item-edition">1st edition, December 2022</p>
+            <div class="ecma-item-content-wrapper">
+              <span><a href="https://example.com/ecma-6.pdf">Download</a></span>
+            </div>
+          </body>
+        </html>
+      HTML
+      parser = described_class.new(hit)
+      expect(parser).to receive(:get_page).with("https://example.com/ecma-6").and_return doc
 
-      subject.parse
+      result = parser.parse
 
-      expect(subject.instance_variable_get(:@doc)).to eq :doc
+      expect(result).to be_an Array
+      expect(result.size).to eq 1
+      item = result.first
+      expect(item).to be_a RelatonEcma::BibliographicItem
+      expect(item.docidentifier.first.id).to eq "ECMA-6"
+      expect(item.title.first.title.content).to eq "ECMAScript Language Specification"
+      expect(item.date.first.on).to eq "2022-12"
+      expect(item.edition.content).to eq "1"
+      expect(item.contributor.first.entity.name.first.content).to eq "Ecma International"
+      expect(item.link.size).to eq 2
+      expect(item.link[0].type).to eq "src"
+      expect(item.link[1].type).to eq "pdf"
+      expect(item.abstract.first.content).to eq "Test abstract"
     end
 
     it "without href" do
-      expect(hit).to receive(:[]).with(:href).and_return nil
-      expect(subject).to receive(:fetch_mem_docid).and_return :docid
-      expect(subject).to receive(:fetch_mem_title).and_return :title
-      expect(subject).to receive(:fetch_mem_date).and_return :date
-      expect(subject).to receive(:fetch_mem_link).and_return :link
-      expect(subject).to receive(:fetch_mem_doctype).and_return :doctype
-      expect(RelatonEcma::BibliographicItem).to receive(:new).with(
-        type: "standard", language: ["en"], script: ["Latn"],
-        contributor: :contributor, place: ["Geneva"], doctype: :doctype,
-        docid: :docid, link: :link, title: :title, date: :date
-      ).and_return :item
+      html = Nokogiri::HTML <<~HTML
+        <html>
+          <body>
+            <div>
+              <div><p>2021</p></div>
+              <div>
+                <div><p>January 2021</p></div>
+                <section><div><p><a href="https://example.com/memento-2021.pdf">Download</a></p></div></section>
+              </div>
+            </div>
+          </body>
+        </html>
+      HTML
+      hit = html.at("//body/div")
+      parser = described_class.new(hit)
 
-      subject.parse
+      result = parser.parse
+
+      expect(result).to be_an Array
+      expect(result.size).to eq 1
+      item = result.first
+      expect(item).to be_a RelatonEcma::BibliographicItem
+      expect(item.docidentifier.first.id).to eq "ECMA MEM/2021"
+      expect(item.title.first.title.content).to eq '"Memento 2021" for year 2021'
+      expect(item.date.first.on).to eq "2021-01"
+      expect(item.link.first.type).to eq "pdf"
+      expect(item.link.first.content.to_s).to eq "https://example.com/memento-2021.pdf"
+      expect(item.contributor.first.entity.name.first.content).to eq "Ecma International"
     end
   end
 
