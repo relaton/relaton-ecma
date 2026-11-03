@@ -1,6 +1,6 @@
 require "bundler/setup"
 require "rspec/matchers"
-require "equivalent-xml"
+require "canon/rspec_matchers"
 require "jing"
 
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
